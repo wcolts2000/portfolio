@@ -1,0 +1,59 @@
+.footer-container {
+  width: 100%;
+  background: hsl(0, 0%, 4%);
+  display: flex;
+  padding: 1rem 2rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.footer-container a {
+  color: #ccc;
+  text-decoration: none;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'sans-serif';
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-container a:hover {
+  color: rgb(230, 195, 0);
+}
+
+.footer-left {
+  order: 2;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  padding: 15rem 0;
+}
+
+.footer-icon {
+  font-size: 4rem;
+  margin: 2.5rem 12rem;
+}
+
+@media screen and (max-width: 650px) {
+  .footer-icon {
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer-icon {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+}
+.footer-container h4 {
+  order: 3;
+  color: rgba(204, 204, 204, 0.555);
+  font-size: 1.3rem;
+  margin: 18px 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-container h4:hover {
+  color: rgb(230, 195, 0);
+}
