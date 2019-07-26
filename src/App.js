@@ -4,6 +4,7 @@ import Footer from './components/footer/footer';
 import HeroSection from './components/hero/HeroSection';
 import styled from 'styled-components';
 import ProjectsSection from './components/projects/ProjectsSection';
+import SkillsSection from './components/skills/SkillsSection';
 
 // ==============================
 // ===========  STYLES  =========
@@ -25,6 +26,7 @@ function App() {
           <Header />
           <HeroSection />
           <ProjectsSection />
+          <SkillsSection />
         </ContentsWrapper>
       </div>
       <Footer />

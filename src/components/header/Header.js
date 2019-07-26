@@ -6,9 +6,14 @@ import styled from 'styled-components';
 // ==============================
 
 const Nav = styled.nav`
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 73px;
   background: #0f0f0f;
   padding: 25px;
+  z-index: 2000;
   display: flex;
   justify-content: space-evenly;
   flex: 1 0 auto;
