@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import bg from '../../assets/codingbg.jpg';
 
 // ==============================
 // ===========  STYLES  =========
 // ==============================
 
 const Section = styled.section`
-  background-image: url('../../assets/codingbg.jpg');
-  background-position: fixed;
+  background-image: url(${bg});
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), url(${bg}));
   position: relative;
 
   &::before {
@@ -17,10 +19,10 @@ const Section = styled.section`
     z-index: 200;
     background-color: papayawhip;
     content: '';
-    top: -81px;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 100%;
+    bottom: 90%;
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
   }
 
@@ -28,7 +30,7 @@ const Section = styled.section`
     font-size: 6.6rem;
     text-align: center;
     font-weight: bold;
-    margin: 8rem auto 16rem;
+    padding: 8rem 0 16rem 0;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 5.5px;

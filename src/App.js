@@ -5,6 +5,7 @@ import HeroSection from './components/hero/HeroSection';
 import styled from 'styled-components';
 import ProjectsSection from './components/projects/ProjectsSection';
 import SkillsSection from './components/skills/SkillsSection';
+import ContactSection from './components/contact/ContactSection';
 
 // ==============================
 // ===========  STYLES  =========
@@ -27,6 +28,7 @@ function App() {
           <HeroSection />
           <ProjectsSection />
           <SkillsSection />
+          <ContactSection />
         </ContentsWrapper>
       </div>
       <Footer />
