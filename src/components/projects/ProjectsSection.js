@@ -32,7 +32,7 @@ const Img = styled.img`
   width: 40%;
   padding: 30px;
   background-color: ${props =>
-    props.left == 'true' ? '#0f0f0f' : 'papayawhip'};
+    props.left === 'true' ? '#0f0f0f' : 'papayawhip'};
 `;
 
 const Div = styled.div`
@@ -70,7 +70,7 @@ const TextDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2rem;
 
   h2 {
@@ -91,7 +91,7 @@ const TextDiv = styled.div`
 
 function ProjectsSection() {
   return (
-    <Section>
+    <Section id="projects">
       <Div bottom="dark">
         <Img
           src={require('./../../assets/jjs.jpg')}
@@ -135,7 +135,7 @@ function ProjectsSection() {
       </Div>
       <LightDiv>
         <TextDiv>
-          <h2>Cool Table: A Test and and Message Posting Site with ReactJS</h2>
+          <h2>Cool Table: A Test and Message Posting Site with ReactJS</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             necessitatibus deserunt perspiciatis nostrum id excepturi.

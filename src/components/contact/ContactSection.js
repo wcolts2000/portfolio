@@ -24,7 +24,7 @@ const Section = styled.section`
 
 function ContactSection() {
   return (
-    <Section>
+    <Section id="contact">
       <h2>Interested in collaborating with me?</h2>
       <ContactForm />
     </Section>
