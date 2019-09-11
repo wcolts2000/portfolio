@@ -14,6 +14,28 @@ const Section = styled.section`
   flex-direction: column;
   position: relative;
 
+  ::before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px ridge aqua;
+    border-right: 5px ridge aqua;
+    border-radius: 5px;
+    transform: translate(-50%) rotate(45deg);
+    animation: bounce 0.3s ease-out 0.3s infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      bottom: 15%;
+    }
+    to {
+      bottom: 14%;
+    }
+  }
   ::after {
     content: '';
     position: absolute;

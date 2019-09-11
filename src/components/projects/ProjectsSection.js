@@ -7,10 +7,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // ==============================
 
 const Section = styled.section`
-  div {
+  width: 100%;
+  /* div {
     display: flex;
-    width: 100%;
-    padding: 8rem 1rem;
+    padding: 2rem 1rem;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  } */
+`;
+
+const LightDiv = styled.div`
+  background: papayawhip;
+  position: relative;
+  display: flex;
+  width: 100%;
+    padding: 2rem 1rem;
     @media (max-width: 700px) {
       flex-direction: column;
       padding: 2rem 1rem;
@@ -18,36 +31,35 @@ const Section = styled.section`
   }
 `;
 
-const LightDiv = styled.div`
-  background: papayawhip;
-  position: relative;
-`;
-
 const ImgWrapper = styled.div`
   max-width: 40%;
   padding: 30px;
-  background-color: ${props =>
-    props.left === 'true' ? '#0f0f0f' : 'papayawhip'};
+  background-color: ${props => (props.left ? '#0f0f0f' : 'papayawhip')};
   display: flex;
   flex-direction: column;
   @media (max-width: 700px) {
     order: 2;
-  }
-  div {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
+    max-width: 80%;
+    /* background: pink; */
+  }
+  .icon {
+    font-size: 2rem;
+    color: ${props => (props.left ? 'white' : '#0f0f0f')};
+    cursor: pointer;
 
-    .icon {
-      font-size: 2rem;
-      color: ${props => (props.left === 'true' ? 'white' : '#0f0f0f')};
-      cursor: pointer;
-
-      :hover {
-        
-      }
+    @media (max-width: 700px) {
+      margin: 2rem;
     }
+  }
+`;
+const IconDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+  @media (max-width: 700px) {
+    flex-direction: column;
   }
 `;
 
@@ -55,6 +67,13 @@ const Div = styled.div`
   background: #0f0f0f;
   color: #ccc;
   position: relative;
+  display: flex;
+  width: 100%;
+  padding: 2rem 1rem;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
 
   &::before {
     content: '';
@@ -89,12 +108,16 @@ const Div = styled.div`
 `;
 
 const TextDiv = styled.div`
-  width: 15%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 
   h2 {
     margin-bottom: 15px;
@@ -109,7 +132,7 @@ const TextDiv = styled.div`
     line-height: 1.5;
     font-size: 1.7rem;
     opacity: 0.9;
-    max-width: 50%;
+    max-width: 80%;
     @media (max-width: 700px) {
       order: 1;
       max-width: 100%;
@@ -125,23 +148,15 @@ function ProjectsSection() {
   return (
     <Section id="projects">
       <Div bottom="dark">
-        <ImgWrapper left="true">
+        <ImgWrapper left>
           <img
             src={require('./../../assets/jjs.jpg')}
             alt="judys jewels snapshot"
           />
-          <div>
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fab', 'github']}
-            />
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fas', 'desktop']}
-            />
-          </div>
+          <IconDiv>
+            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+          </IconDiv>
         </ImgWrapper>
         <TextDiv>
           <h2>Judy's Jewels E-Commerce Site</h2>
@@ -164,30 +179,22 @@ function ProjectsSection() {
             src={require('./../../assets/notes.jpg')}
             alt="lambda notes thumbnail"
           />
-          <div>
+          <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
-          </div>
+          </IconDiv>
         </ImgWrapper>
       </LightDiv>
       <Div>
-        <ImgWrapper left="true">
+        <ImgWrapper left>
           <img
             src={require('./../../assets/snj.jpg')}
             alt="s&j website thumbnail"
           />
-          <div>
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fab', 'github']}
-            />
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fas', 'desktop']}
-            />
-          </div>
+          <IconDiv>
+            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+          </IconDiv>
         </ImgWrapper>
         <TextDiv>
           <h2>S & J Architecture WebSite with Vanilla JS</h2>
@@ -212,30 +219,22 @@ function ProjectsSection() {
             src={require('./../../assets/cooltbl.jpg')}
             alt="cool table thumbnail"
           />
-          <div>
+          <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
-          </div>
+          </IconDiv>
         </ImgWrapper>
       </LightDiv>
       <Div>
-        <ImgWrapper left="true">
+        <ImgWrapper left>
           <img
             src={require('./../../assets/blog.jpg')}
             alt="gatsby blog site thumbnail"
           />
-          <div>
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fab', 'github']}
-            />
-            <FontAwesomeIcon
-              left="true"
-              className="icon"
-              icon={['fas', 'desktop']}
-            />
-          </div>
+          <IconDiv>
+            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+          </IconDiv>
         </ImgWrapper>
         <TextDiv>
           <h2>Personal Blog Site with GatsbyJS</h2>
@@ -252,10 +251,10 @@ function ProjectsSection() {
             src={require('./../../assets/mud.jpg')}
             alt="terminal based mud thumbnail"
           />
-          <div>
+          <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
-          </div>
+          </IconDiv>
         </ImgWrapper>
       </LightDiv>
     </Section>
