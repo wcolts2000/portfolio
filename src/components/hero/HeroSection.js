@@ -61,27 +61,25 @@ const Section = styled.section`
   button {
     background: none;
     outline: none;
-    padding: 0.75em 2.5em;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.8rem;
-    border: 2px solid #0f0f0f;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
-    :hover {
-      background: #0f0f0f;
-      opacity: 0.9;
-
-      a {
-        color: aqua;
-      }
-    }
+    border: none;
 
     a {
+      border: 2px solid #0f0f0f;
+      padding: 0.75em 2.5em;
       transition: all 0.3s ease-in-out;
       text-decoration: none;
       color: #0f0f0f;
+      width: 100%;
+      :hover {
+        opacity: 0.9;
+        color: aqua;
+        background: #0f0f0f;
+      }
     }
   }
 `;
