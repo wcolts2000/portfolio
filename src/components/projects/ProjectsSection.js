@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import mac from '../../assets/mac.png';
 
 // ==============================
 // ===========  STYLES  =========
@@ -23,11 +24,31 @@ const LightDiv = styled.div`
   position: relative;
   display: flex;
   width: 100%;
+  padding: 2rem 1rem;
+  @media (max-width: 700px) {
+    flex-direction: column;
     padding: 2rem 1rem;
-    @media (max-width: 700px) {
-      flex-direction: column;
-      padding: 2rem 1rem;
-    }
+  }
+`;
+
+const Span = styled.span`
+  margin: 0;
+  padding: 50%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(${mac});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 13%;
+    left: 0.4%;
+    bottom: 55%;
+    transform: scale(0.93, 1.01);
   }
 `;
 
@@ -149,15 +170,18 @@ function ProjectsSection() {
     <Section id="projects">
       <Div bottom="dark">
         <ImgWrapper left>
-          <img
-            src={require('./../../assets/jjs.jpg')}
-            alt="judys jewels snapshot"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/jjs.jpg')}
+              alt="judys jewels snapshot"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
           </IconDiv>
         </ImgWrapper>
+
         <TextDiv>
           <h2>Judy's Jewels E-Commerce Site</h2>
           <p>
@@ -175,10 +199,12 @@ function ProjectsSection() {
           </p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <img
-            src={require('./../../assets/notes.jpg')}
-            alt="lambda notes thumbnail"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/notes.jpg')}
+              alt="lambda notes thumbnail"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
@@ -187,15 +213,18 @@ function ProjectsSection() {
       </LightDiv>
       <Div>
         <ImgWrapper left>
-          <img
-            src={require('./../../assets/snj.jpg')}
-            alt="s&j website thumbnail"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/snj.jpg')}
+              alt="s&j website thumbnail"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
           </IconDiv>
         </ImgWrapper>
+
         <TextDiv>
           <h2>S & J Architecture WebSite with Vanilla JS</h2>
           <p>
@@ -215,10 +244,12 @@ function ProjectsSection() {
           </p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <img
-            src={require('./../../assets/cooltbl.jpg')}
-            alt="cool table thumbnail"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/cooltbl.jpg')}
+              alt="cool table thumbnail"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
@@ -227,15 +258,18 @@ function ProjectsSection() {
       </LightDiv>
       <Div>
         <ImgWrapper left>
-          <img
-            src={require('./../../assets/blog.jpg')}
-            alt="gatsby blog site thumbnail"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/blog.jpg')}
+              alt="gatsby blog site thumbnail"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
           </IconDiv>
         </ImgWrapper>
+
         <TextDiv>
           <h2>Personal Blog Site with GatsbyJS</h2>
           <p>My blog.</p>{' '}
@@ -247,10 +281,12 @@ function ProjectsSection() {
           <p>A python Multi User Dungeon terminal based game.</p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <img
-            src={require('./../../assets/mud.jpg')}
-            alt="terminal based mud thumbnail"
-          />
+          <Span>
+            <img
+              src={require('./../../assets/mud.jpg')}
+              alt="terminal based mud thumbnail"
+            />
+          </Span>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
