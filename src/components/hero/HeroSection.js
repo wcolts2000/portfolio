@@ -58,28 +58,20 @@ const Section = styled.section`
     margin: 0 auto 40px;
   }
 
-  button {
-    background: none;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 1.8rem;
+  a {
     cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 2px solid #0f0f0f;
+    padding: 0.75em 2.5em;
     transition: all 0.3s ease-in-out;
-    border: none;
-
-    a {
-      border: 2px solid #0f0f0f;
-      padding: 0.75em 2.5em;
-      transition: all 0.3s ease-in-out;
-      text-decoration: none;
-      color: #0f0f0f;
-      width: 100%;
-      :hover {
-        opacity: 0.9;
-        color: aqua;
-        background: #0f0f0f;
-      }
+    text-decoration: none;
+    color: #0f0f0f;
+    :hover {
+      opacity: 0.9;
+      color: aqua;
+      background: #0f0f0f;
     }
   }
 `;
@@ -93,9 +85,7 @@ function HeroSection() {
     <Section>
       <h1>Pheneger Development</h1>
       <h3>Full Stack Web Developer</h3>
-      <button disabled="disabled">
-        <a href="#contact">Get In Touch</a>
-      </button>
+      <a href="#contact">Get In Touch</a>
     </Section>
   );
 }
