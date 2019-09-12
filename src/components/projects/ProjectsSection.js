@@ -31,11 +31,10 @@ const LightDiv = styled.div`
   }
 `;
 
-const Span = styled.span`
+const ImageContainer = styled.div`
   margin: 0;
   padding: 50%;
   width: 100%;
-  height: 100%;
   position: relative;
   background-image: url(${mac});
   background-size: contain;
@@ -53,7 +52,7 @@ const Span = styled.span`
 `;
 
 const ImgWrapper = styled.div`
-  max-width: 40%;
+  width: 40%;
   padding: 30px;
   background-color: ${props => (props.left ? '#0f0f0f' : 'papayawhip')};
   display: flex;
@@ -61,8 +60,7 @@ const ImgWrapper = styled.div`
   @media (max-width: 700px) {
     order: 2;
     flex-direction: row;
-    max-width: 80%;
-    /* background: pink; */
+    width: 80%;
   }
   .icon {
     font-size: 2rem;
@@ -170,12 +168,12 @@ function ProjectsSection() {
     <Section id="projects">
       <Div bottom="dark">
         <ImgWrapper left>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/jjs.jpg')}
               alt="judys jewels snapshot"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
@@ -199,12 +197,12 @@ function ProjectsSection() {
           </p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/notes.jpg')}
               alt="lambda notes thumbnail"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
@@ -213,12 +211,12 @@ function ProjectsSection() {
       </LightDiv>
       <Div>
         <ImgWrapper left>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/snj.jpg')}
               alt="s&j website thumbnail"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
@@ -244,12 +242,12 @@ function ProjectsSection() {
           </p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/cooltbl.jpg')}
               alt="cool table thumbnail"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
@@ -258,12 +256,12 @@ function ProjectsSection() {
       </LightDiv>
       <Div>
         <ImgWrapper left>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/blog.jpg')}
               alt="gatsby blog site thumbnail"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
@@ -281,12 +279,12 @@ function ProjectsSection() {
           <p>A python Multi User Dungeon terminal based game.</p>{' '}
         </TextDiv>
         <ImgWrapper>
-          <Span>
+          <ImageContainer>
             <img
               src={require('./../../assets/mud.jpg')}
               alt="terminal based mud thumbnail"
             />
-          </Span>
+          </ImageContainer>
           <IconDiv>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
