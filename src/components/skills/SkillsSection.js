@@ -36,7 +36,7 @@ const Section = styled.section`
     letter-spacing: 5.5px;
     background: gold;
     display: inline-block;
-    margin: 1.6rem 0;
+    margin: 1.6rem 0 0;
   }
 
   ul {
@@ -46,6 +46,7 @@ const Section = styled.section`
     justify-content: flex-start;
     padding: 1.6rem;
     background: papayawhip;
+    margin-bottom: 2.5rem;
   }
 
   li {
@@ -58,6 +59,8 @@ const Section = styled.section`
 
     i,
     .svg {
+      padding: 0;
+      margin: 0;
       font-size: 3em;
       padding-bottom: 10px;
       margin-bottom: 10px;
@@ -75,9 +78,11 @@ const Section = styled.section`
         background: #0f0f0f;
       }
     }
-    .svg {
-      padding: 0;
-      margin: 0;
+    @media (max-width: 700px) {
+      min-width: 33%;
+    }
+    @media (max-width: 450px) {
+      min-width: 50%;
     }
   }
 `;

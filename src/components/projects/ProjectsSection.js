@@ -55,7 +55,7 @@ const ImgWrapper = styled.div`
     width: 80%;
   }
   .icon {
-    font-size: 2rem;
+    font-size: 6rem;
     color: ${props => (props.left ? 'white' : '#0f0f0f')};
     cursor: pointer;
 
