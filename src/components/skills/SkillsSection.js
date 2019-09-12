@@ -20,11 +20,11 @@ const Section = styled.section`
     z-index: 200;
     background-color: papayawhip;
     content: '';
-    top: -1px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 97%;
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
   }
 
   h2 {

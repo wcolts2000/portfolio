@@ -36,17 +36,6 @@ const Section = styled.section`
       bottom: 14%;
     }
   }
-  ::after {
-    content: '';
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-    left: 0;
-    top: 80%;
-    z-index: 100;
-    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-  }
 
   h1 {
     font-size: 4.8rem;

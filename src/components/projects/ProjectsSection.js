@@ -9,14 +9,6 @@ import mac from '../../assets/mac.png';
 
 const Section = styled.section`
   width: 100%;
-  /* div {
-    display: flex;
-    padding: 2rem 1rem;
-    @media (max-width: 700px) {
-      flex-direction: column;
-      padding: 2rem 1rem;
-    }
-  } */
 `;
 
 const LightDiv = styled.div`
@@ -97,23 +89,24 @@ const Div = styled.div`
   &::before {
     content: '';
     position: absolute;
-    bottom: 99%;
+    bottom: 100%;
+    /* border: 3px solid red; */
     top: -40px;
     z-index: 100;
     left: 0px;
     right: 0px;
     background-color: #0f0f0f;
-    clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+    clip-path: polygon(100% 100%, 100% 90%, 0% 0%, 0% 100%);
   }
 
   &::after {
     content: '';
     position: absolute;
-    bottom: -40px;
-    top: 99%;
+    bottom: -50px;
     z-index: 1000;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
+    height: 50px;
     background-color: #0f0f0f;
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
   }
