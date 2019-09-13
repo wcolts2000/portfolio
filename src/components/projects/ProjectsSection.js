@@ -57,7 +57,12 @@ const ImgWrapper = styled.div`
   .icon {
     font-size: 6rem;
     color: ${props => (props.left ? 'white' : '#0f0f0f')};
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
+
+    :hover {
+      color: rgb(230, 195, 0);
+    }
 
     @media (max-width: 700px) {
       margin: 2rem;
@@ -168,8 +173,16 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                left
+                className="icon"
+                icon={['fas', 'desktop']}
+              />
+            </a>
           </IconDiv>
         </ImgWrapper>
 
@@ -197,8 +210,12 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            </a>
           </IconDiv>
         </ImgWrapper>
       </LightDiv>
@@ -211,8 +228,16 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                left
+                className="icon"
+                icon={['fas', 'desktop']}
+              />
+            </a>
           </IconDiv>
         </ImgWrapper>
 
@@ -242,8 +267,12 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            </a>
           </IconDiv>
         </ImgWrapper>
       </LightDiv>
@@ -256,8 +285,16 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon left className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                left
+                className="icon"
+                icon={['fas', 'desktop']}
+              />
+            </a>
           </IconDiv>
         </ImgWrapper>
 
@@ -279,8 +316,12 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
-            <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
+            </a>
           </IconDiv>
         </ImgWrapper>
       </LightDiv>
