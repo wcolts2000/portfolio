@@ -20,11 +20,15 @@ const Section = styled.section`
     z-index: 200;
     background-color: papayawhip;
     content: '';
-    top: 0;
+    top: -1px;
     left: 0;
     right: 0;
     bottom: 97%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   h2 {

@@ -94,26 +94,27 @@ const Div = styled.div`
   &::before {
     content: '';
     position: absolute;
-    bottom: 100%;
-    /* border: 3px solid red; */
+    bottom: 99%;
     top: -40px;
     z-index: 100;
     left: 0px;
     right: 0px;
     background-color: #0f0f0f;
-    clip-path: polygon(100% 100%, 100% 90%, 0% 0%, 0% 100%);
+    clip-path: polygon(100% 99%, 100% 90%, 0% 0%, 0% 100%);
   }
 
   &::after {
     content: '';
+    /* border: 1px solid red; */
     position: absolute;
     bottom: -50px;
     z-index: 1000;
+    top: 99%;
     left: 0;
     right: 0;
     height: 50px;
     background-color: #0f0f0f;
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    clip-path: polygon(0% 1%, 100% 5%, 0% 100%);
   }
 
   &::after,
