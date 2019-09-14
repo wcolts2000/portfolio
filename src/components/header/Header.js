@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 // ==============================
 // ===========  STYLES  =========
@@ -30,6 +31,9 @@ const Nav = styled.nav`
       opacity: 0.6;
     }
   }
+  .active {
+    color: gold;
+  }
 `;
 
 // =================================
@@ -39,9 +43,36 @@ const Nav = styled.nav`
 function Header() {
   return (
     <Nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">skills</a>
-      <a href="#contact">contact</a>
+      <Link
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-70}
+        duration={500}
+        to="projects"
+      >
+        Projects
+      </Link>
+      <Link
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-70}
+        duration={500}
+        to="skills"
+      >
+        skills
+      </Link>
+      <Link
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-70}
+        duration={500}
+        to="contact"
+      >
+        contact
+      </Link>
     </Nav>
   );
 }
