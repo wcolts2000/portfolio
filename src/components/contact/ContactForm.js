@@ -61,6 +61,14 @@ const Form = styled.form`
 `;
 
 // =================================
+// ===========   HELPER    =========
+// =================================
+const encode = data =>
+  Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+
+// =================================
 // ===========  COMPONENT  =========
 // =================================
 
@@ -76,18 +84,32 @@ class ContactForm extends Component {
     this.setState({ [name]: value });
   };
   submitHandler = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'contact',
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
     e.preventDefault();
     console.log('formstate', this.state);
   };
   render() {
+    const { name, email, message } = this.state;
     return (
-      <Form onSubmit={this.submitHandler}>
+      <Form onSubmit={this.submitHandler} name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>
         <input
           onChange={this.inputChangeHandler}
           type="text"
           placeholder="John Doe"
-          value={this.state.name}
+          value={name}
           required
           name="name"
         />
@@ -96,7 +118,7 @@ class ContactForm extends Component {
           onChange={this.inputChangeHandler}
           type="email"
           placeholder="jonnydoe@email.com"
-          value={this.state.email}
+          value={email}
           required
           name="email"
         />
@@ -104,7 +126,7 @@ class ContactForm extends Component {
         <textarea
           onChange={this.inputChangeHandler}
           placeholder="Message here..."
-          value={this.state.message}
+          value={message}
           rows="8"
           cols="50"
           required
