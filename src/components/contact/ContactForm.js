@@ -132,15 +132,7 @@ class ContactForm extends Component {
           required
           name="message"
         />
-        <input
-          type="submit"
-          value="Send"
-          onClick={() =>
-            alert(
-              'not hooked up yet,:( sorry. But it will be soon so try again in a day or two, Thank you for understanding'
-            )
-          }
-        />
+        <input type="submit" value="Send" />
       </Form>
     );
   }
