@@ -118,7 +118,7 @@ const Span = styled.span`
 
 class ContactSection extends Component {
   state = {
-    simple: false
+    simple: true
   };
 
   toggleForm = ({ target: { id } }) =>
