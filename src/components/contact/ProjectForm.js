@@ -8,13 +8,14 @@ import { encode } from './helpers';
 
 const Form = styled.form`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 2rem;
 
   label {
     font-size: 2rem;
     color: #0f0f0f;
     margin: 1rem;
+    width: 100%;
   }
 
   input:-webkit-autofill,
@@ -41,15 +42,16 @@ const Form = styled.form`
     margin-bottom: 1rem;
     background: papayawhip;
     border-radius: 3px;
+    width: 100%;
 
     &[type='submit'] {
       background: aqua;
       color: #0f0f0f;
       cursor: pointer;
+      border-radius: 5rem;
       text-transform: uppercase;
       position: relative;
       top: 0;
-      border-radius: 5rem;
 
       :hover {
         top: 2px;
@@ -68,36 +70,34 @@ const Form = styled.form`
 
 class ContactForm extends Component {
   state = {
-    simple: true,
     name: '',
     email: '',
-    message: ''
+    message: '',
+    duration: '',
+    company: '',
+    budget: ''
   };
 
-  inputChangeHandler = ({ target: { name, value } }) => {
+  inputChangeHandler = ({ target: { name, value } }) =>
     this.setState({ [name]: value });
-  };
+
   submitHandler = e => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': 'contact',
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message
-      })
+      body: encode({ ...this.state })
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
     e.preventDefault();
     console.log('formstate', this.state);
   };
+
   render() {
-    const { name, email, message } = this.state;
+    const { name, email, message, company, budget } = this.state;
     return (
-      <Form onSubmit={this.submitHandler} name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
+      <Form onSubmit={this.submitHandler} name="project" method="post">
+        <input type="hidden" name="form-name" value="project" />
         <label htmlFor="name">Name</label>
         <input
           onChange={this.inputChangeHandler}
@@ -106,6 +106,14 @@ class ContactForm extends Component {
           value={name}
           required
           name="name"
+        />
+        <label htmlFor="company">Company</label>
+        <input
+          onChange={this.inputChangeHandler}
+          type="text"
+          placeholder="JohnDoe Unlimited"
+          value={company}
+          name="company"
         />
         <label htmlFor="email">Email</label>
         <input
@@ -116,10 +124,20 @@ class ContactForm extends Component {
           required
           name="email"
         />
-        <label htmlFor="message">Message</label>
+        <label htmlFor="budget">Budget</label>
+        <input
+          onChange={this.inputChangeHandler}
+          type="number"
+          placeholder="1500"
+          value={budget}
+          min="1"
+          required
+          name="budget"
+        />
+        <label htmlFor="message">Description</label>
         <textarea
           onChange={this.inputChangeHandler}
-          placeholder="Message here..."
+          placeholder="A brief project summary..."
           value={message}
           rows="8"
           required
