@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 // ==============================
 // ===========  STYLES  =========
@@ -74,7 +75,16 @@ function HeroSection() {
     <Section>
       <h1>Pheneger Development</h1>
       <h3>Full Stack Web Developer</h3>
-      <a href="#contact">Get In Touch</a>
+      <Link
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-70}
+        duration={500}
+        to="contact"
+      >
+        Get In Touch
+      </Link>
     </Section>
   );
 }
