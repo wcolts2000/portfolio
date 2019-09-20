@@ -2,10 +2,4 @@
 [[redirects]]
   from = "http://phenegerdevelopment.netlify.com/*"
   to = "https://seanpheneger.dev/:splat"
-  status = 301
-  from = "https://phenegerdevelopment.netlify.com/*"
-  to = "https://seanpheneger.dev/:splat"
-  status = 301
-  from = "/*"
-  to = "index.html"
-  status = 200
+  status = 301!
