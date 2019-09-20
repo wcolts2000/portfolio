@@ -1,4 +1,11 @@
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
-http://phenegerdevelopment.netlify.com/* https://seanpheneger.dev/:splat 301!
-https://phenegerdevelopment.netlify.com/* https://seanpheneger.dev/:splat 301!
+  from = "http://phenegerdevelopment.netlify.com/*"
+  to = "https://seanpheneger.dev/:splat"
+  status = 301!
+  from = "https://phenegerdevelopment.netlify.com/*"
+  to = "https://seanpheneger.dev/:splat"
+  status = 301!
+  from = "/*"
+  to = "index.html"
+  status = 200
