@@ -3,3 +3,4 @@
   from = "http://phenegerdevelopment.netlify.com/*"
   to = "https://seanpheneger.dev/:splat"
   status = 301
+  https://phenegerdevelopment.netlify.com/* https://seanpheneger.dev/:splat 301!
