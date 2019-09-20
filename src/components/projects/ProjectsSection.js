@@ -174,10 +174,18 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              href="https://github.com/wcolts2000/JudysJewels"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a
+              href="https://wcolts2000.github.io/JudysJewels/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 left
                 className="icon"
@@ -188,10 +196,10 @@ function ProjectsSection() {
         </ImgWrapper>
 
         <TextDiv>
-          <h2>Judy's Jewels E-Commerce Site</h2>
+          <h2>Judy's Jewels E-Commerce Site Design</h2>
           <p>
-            A custom designed e-commerse jewelry website built utilizing
-            GatsbyJS and Firebase.
+            A custom design for an e-commerse jewelry website currently being
+            rebuilt utilizing GatsbyJS and Firebase.
           </p>
         </TextDiv>
       </Div>
@@ -211,10 +219,18 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/wcolts2000/front-end-project-week"
+            >
               <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lambda-notes-live.netlify.com"
+            >
               <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
             </a>
           </IconDiv>
@@ -229,10 +245,18 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/wcolts2000/User-Interface-Project-Week"
+            >
               <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wcolts2000.github.io/User-Interface-Project-Week/"
+            >
               <FontAwesomeIcon
                 left
                 className="icon"
@@ -268,10 +292,18 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/wcolts2000/cool_table"
+            >
               <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://cool-table.netlify.com/"
+            >
               <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
             </a>
           </IconDiv>
@@ -286,10 +318,14 @@ function ProjectsSection() {
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
+            >
               <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a target="_blank" rel="noopener noreferrer" href="#">
               <FontAwesomeIcon
                 left
                 className="icon"
@@ -306,21 +342,31 @@ function ProjectsSection() {
       </Div>
       <LightDiv>
         <TextDiv>
-          <h2>Terminal Based MUD with Python</h2>
-          <p>A python Multi User Dungeon terminal based game.</p>{' '}
+          <h2>Cave Escape M.U.D. with Python</h2>
+          <p>
+            A Python Django Multi User Dungeon html5 canvas maze race game.
+          </p>{' '}
         </TextDiv>
         <ImgWrapper>
           <ImageContainer>
             <img
-              src={require('./../../assets/mud.jpg')}
+              src={require('./../../assets/cave-escape.png')}
               alt="terminal based mud thumbnail"
             />
           </ImageContainer>
           <IconDiv>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/cs19-maze-mud"
+            >
               <FontAwesomeIcon className="icon" icon={['fab', 'github']} />
             </a>
-            <a href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://maze-mud-client.herokuapp.com"
+            >
               <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />
             </a>
           </IconDiv>

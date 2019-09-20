@@ -74,7 +74,7 @@ function HeroSection() {
   return (
     <Section>
       <h1>Pheneger Development</h1>
-      <h3>Full Stack Web Developer</h3>
+      <h3>Full Stack Software Engineer</h3>
       <Link
         activeClass="active"
         spy={true}
