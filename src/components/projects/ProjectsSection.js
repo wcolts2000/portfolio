@@ -279,9 +279,9 @@ function ProjectsSection() {
           <h2>Cool Table: A Test and Message Posting Site with ReactJS</h2>
           <p>
             A multi-user site that allows a user to post tests with multiple
-            choice answers so others can take them to assist in help learn new
-            material or prep for a real test. Also has a notes/comments feature
-            where users can leave comments and interact with each other
+            choice answers so others can take them to assist in helping to learn
+            new material or preparing for a real test. Also has a notes/comments
+            feature where users can leave comments and interact with each other
           </p>{' '}
         </TextDiv>
         <ImgWrapper>
@@ -325,7 +325,11 @@ function ProjectsSection() {
             >
               <FontAwesomeIcon left className="icon" icon={['fab', 'github']} />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://pretty-good-gatsby-blog.netlify.com/"
+            >
               <FontAwesomeIcon
                 left
                 className="icon"
