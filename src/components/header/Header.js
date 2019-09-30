@@ -77,7 +77,7 @@ function Header() {
           activeClass="active"
           spy={true}
           smooth
-          offset={-70}
+          offset={-60}
           duration={500}
           to="projects"
         >
@@ -87,7 +87,7 @@ function Header() {
           activeClass="active"
           spy={true}
           smooth
-          offset={-70}
+          offset={-60}
           duration={500}
           to="skills"
         >
@@ -97,7 +97,7 @@ function Header() {
           activeClass="active"
           spy={true}
           smooth
-          offset={-70}
+          offset={-60}
           duration={500}
           to="contact"
         >

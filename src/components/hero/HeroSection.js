@@ -9,7 +9,7 @@ import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg'
 // ==============================
 
 const Section = styled.section`
-  padding: 8rem 2.5rem;
+  padding: 15rem 2.5rem 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@ const Section = styled.section`
   @media (max-width: 800px) {
       width: 100%;
   background: #6C63FF;
+  padding: 15rem 2.5rem 8rem;
 
   }
 
@@ -57,10 +58,11 @@ const Section = styled.section`
     animation: bounce 0.3s ease-out 0.3s infinite alternate;
 
   @media (max-width: 800px) {
+    animation: smallBounce 0.3s ease-out 0.3s infinite alternate;
     border-bottom: 5px ridge  #fff;
     border-right: 5px ridge  #fff;
     left: 6.2rem;
-    bottom: 10%;
+    bottom: 8%;
   }
 }
 
@@ -70,6 +72,15 @@ const Section = styled.section`
     }
     to {
       bottom: 14%;
+    }
+  }
+  
+  @keyframes smallBounce {
+    from {
+      bottom: 8%;
+    }
+    to {
+      bottom: 7%;
     }
   }
 
@@ -119,7 +130,7 @@ function HeroSection() {
         activeClass="active"
         spy={true}
         smooth
-        offset={-70}
+        offset={-60}
         duration={500}
         to="contact"
       >
