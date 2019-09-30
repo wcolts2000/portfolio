@@ -63,7 +63,6 @@ const Section = styled.section`
     bottom: 10%;
   }
 }
-  }
 
   @keyframes bounce {
     from {
