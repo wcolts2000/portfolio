@@ -47,7 +47,7 @@ const Section = styled.section`
   }
 
   .form-toggle {
-    background: #0f0f0f;
+    background: #E4E1FF;
     width: 100%;
     display: flex;
     padding: 0;
@@ -56,7 +56,7 @@ const Section = styled.section`
 
   form {
     width: 100%;
-    background-color: tan;
+    background-color: white;
   }
 
   .left {
@@ -71,10 +71,10 @@ const Section = styled.section`
   .right {
     width: 50%;
     padding: 2rem;
-    background: linear-gradient(#24a599 20%, rgba(0, 0, 255, 0)), url(${map});
+    background: linear-gradient(#E4E1FF 20%, rgba(0, 0, 255, 0)), url(${map});
     background-size: cover;
     p {
-      color: white;
+      color: #0f0f0f;
       width: 100%;
     }
 
@@ -102,13 +102,13 @@ const Span = styled.span`
   cursor: pointer;
   width: 50%;
   padding: 2rem;
-  color: ${props => (props.active ? 'gold' : 'white')};
-  border-bottom: ${props => (props.active ? '.3rem solid gold' : 'none')};
+  color: ${props => (props.active ? ' #6C64FF' : '#0f0f0f')};
+  border-bottom: ${props => (props.active ? '.3rem solid  #6C64FF' : 'none')};
   transition: color 0.3s ease-in;
   padding-bottom: ${props => (props.active ? '1.7rem' : '2rem')};
 
   :hover {
-    color: gold;
+    color:  #6C64FF;
   }
 `;
 

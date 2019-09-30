@@ -27,7 +27,7 @@ const Form = styled.form`
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid aqua;
+    border: 1px solid  #6C63FF;
     -webkit-text-fill-color: #0f0f0f;
     -webkit-box-shadow: 0 0 0px 1000px lightgreen inset;
     transition: background-color 5000s ease-in-out 0s;
@@ -40,12 +40,12 @@ const Form = styled.form`
     border: none;
     border-bottom: 1px dotted #0f0f0f;
     margin-bottom: 1rem;
-    background: papayawhip;
+    background: #E4E1FF;
     border-radius: 3px;
     width: 100%;
 
     &[type='submit'] {
-      background: aqua;
+      background:  #6C63FF;
       color: #0f0f0f;
       cursor: pointer;
       border-radius: 5rem;

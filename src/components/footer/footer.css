@@ -17,7 +17,7 @@
 }
 
 .footer-container a:hover {
-  color: rgb(230, 195, 0);
+  color: #6C64FF;
 }
 
 .footer-left {
@@ -50,5 +50,5 @@
 }
 
 .footer-container h4:hover {
-  color: rgb(230, 195, 0);
+  color: #6C64FF;
 }

@@ -38,7 +38,7 @@ const Section = styled.section`
     padding: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 5.5px;
-    background: gold;
+    background:  #fff;
     display: inline-block;
     margin: 1.6rem 0 0;
   }
