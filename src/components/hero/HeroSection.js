@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import heroImg from '../../assets/hero-logos.svg'
-import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg'
+import heroImg from '../../assets/hero-logos.svg';
+import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg';
 
 // ==============================
 // ===========  STYLES  =========
@@ -118,6 +118,7 @@ const Section = styled.section`
 // =================================
 // ===========  COMPONENT  =========
 // =================================
+
 
 function HeroSection() {
   return (

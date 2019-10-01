@@ -9,13 +9,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Section = styled.section`
   width: 100%;
-  padding: 6rem 1.4rem;
+  padding: 4.5rem;
   background-color: #b8f9e6;
 
   h2 {
     text-align: left;
     font-weight: bold;
     padding: 1.6rem;
+    color: #26235a;
     text-transform: uppercase;
     -webkit-letter-spacing: 5.5px;
     -moz-letter-spacing: 5.5px;
@@ -23,8 +24,7 @@ const Section = styled.section`
     letter-spacing: 5.5px;
     background: #fff;
     display: inline-block;
-    margin: 1.6rem 0;
-    /* width: 100%; */
+    margin: 2.6rem 0 4rem;
     font-size: 2.6rem;
   }
 
@@ -115,7 +115,7 @@ const Section = styled.section`
     h3 {
       font-size: 2rem;
       line-height: 1.5;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       transform: translateZ(3rem);
     }
 
@@ -147,7 +147,7 @@ const Section = styled.section`
       }
 
       .icon {
-        transform: translateZ(3rem);
+        transform: translateZ(4rem);
         font-size: 2rem;
         margin: 0 1.6rem;
 
@@ -159,7 +159,7 @@ const Section = styled.section`
 const Front = styled.div`
   background-color: #6c63ff;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-blend-mode: multiply;
   color: #333;
   background-image: url(${props => props.url});

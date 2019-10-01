@@ -14,7 +14,7 @@ const Section = styled.section`
   align-items: center;
   padding: 6rem 1.5rem;
   align-items: flex-start;
-  background: linear-gradient(to bottom right, #24b187, #2496b0);
+  background: #B8F9E6;
 
   h2 {
     max-width: 1200px;
@@ -52,6 +52,7 @@ const Section = styled.section`
     display: flex;
     padding: 0;
     white-space: nowrap;
+    margin: 0;
   }
 
   form {
@@ -61,7 +62,6 @@ const Section = styled.section`
 
   .left {
     width: 50%;
-    height: 100%;
 
     @media (max-width: 750px) {
       width: 100%;
@@ -85,13 +85,14 @@ const Section = styled.section`
 `;
 
 const Wrapper = styled.div`
-  height: ${props => (props.active ? '592px' : '786px')};
+  /* height: ${props => (props.active ? '638px' : '842px')}; */
   display: flex;
   width: 100%;
   margin-bottom: 2rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 
   @media (max-width: 750px) {
     flex-direction: column;
