@@ -35,9 +35,10 @@ const Section = styled.section`
   }
 
   .card {
-    width: 30%;
+    width: 270.5px;
     perspective: 800px;
     height: 400px;
+    margin: 2rem;
   }
 
   .card__content {
@@ -102,13 +103,14 @@ const Section = styled.section`
     transform: translateZ(6rem);
     font-weight: normal;
     font-size: 1.5rem;
-    line-height: 1.6;
-    padding: 2rem 1rem;
+    line-height: 2;
+    padding: 2rem 0;
   }
   .card__back {
     transform: rotateY(0.5turn);
     color: white;
-    background: black linear-gradient(90deg, #6C63FF 0%, #6C63FF 50%, #26235a 50%);
+    background: #26235a;
+    padding: 1rem 2.6rem 0;
 
     h3 {
       font-size: 2rem;
@@ -179,7 +181,7 @@ function ProjectsSection() {
               <div className="card__subtitle">a study app</div>
             </Front>
             <div className="card__back">
-              <h3>Cool Table: A Quiz and Note Posting Site with ReactJS</h3>
+              <h3>Cool Table: Custom Quizzes with ReactJS</h3>
               <p className="card__body">
                 A multi-user site where you can create, take, and share quizzes
                 and notes
@@ -216,7 +218,7 @@ function ProjectsSection() {
               <div className="card__subtitle">Note Taking App</div>
             </Front>
             <div className="card__back">
-              <h3>Lambda Notes with ReactJS</h3>
+              <h3>Lambda Notes with <br/>ReactJS</h3>
               <p className="card__body">
                 {' '}
                 A multi-user notes application with CSV export and drag-n-drop
@@ -253,11 +255,10 @@ function ProjectsSection() {
               <div className="card__subtitle">blog/Resources</div>
             </Front>
             <div className="card__back">
-              <h3>Personal Blog and Reference Site with GatsbyJS</h3>
+              <h3>Personal Blog and Reference Site</h3>
               <p className="card__body">
                 {' '}
-                A blog and reference site containing links to my projects and
-                useful resources.
+                A blog and useful resources compilation made with GatsbyJS.
               </p>
               <div className="icon-container">
                 <a
