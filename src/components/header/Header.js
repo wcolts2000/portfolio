@@ -3,6 +3,59 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import smallLogo from '../../assets/PhenegerDevelopmentLogo174x60.svg'
 
+// =================================
+// ===========  COMPONENT  =========
+// =================================
+
+function Header() {
+  return (
+    <Nav>
+      <Link
+      className="left"
+      smooth
+      offset={0}
+      duration={500}
+      to="hero"
+      ><img className="logo" src={smallLogo} alt="pheneger development"/></Link>
+      <div className="right">
+
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth
+          offset={-60}
+          duration={500}
+          to="projects"
+        >
+          Projects
+        </Link>
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth
+          offset={-60}
+          duration={500}
+          to="skills"
+        >
+          skills
+        </Link>
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth
+          offset={-60}
+          duration={500}
+          to="contact"
+        >
+          contact
+        </Link>
+      </div>
+    </Nav>
+  );
+}
+
+export default Header;
+
 // ==============================
 // ===========  STYLES  =========
 // ==============================
@@ -56,56 +109,3 @@ const Nav = styled.nav`
     color: #6C64FF;
   }
 `;
-
-// =================================
-// ===========  COMPONENT  =========
-// =================================
-
-function Header() {
-  return (
-    <Nav>
-      <Link
-      className="left"
-      smooth
-      offset={0}
-      duration={500}
-      to="hero"
-      ><img className="logo" src={smallLogo} alt="pheneger development"/></Link>
-      <div className="right">
-
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth
-          offset={-60}
-          duration={500}
-          to="projects"
-        >
-          Projects
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth
-          offset={-60}
-          duration={500}
-          to="skills"
-        >
-          skills
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth
-          offset={-60}
-          duration={500}
-          to="contact"
-        >
-          contact
-        </Link>
-      </div>
-    </Nav>
-  );
-}
-
-export default Header;

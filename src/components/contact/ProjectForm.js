@@ -2,71 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { encode } from './helpers';
 
-// ==============================
-// ===========  STYLES  =========
-// ==============================
-
-const Form = styled.form`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-
-  label {
-    font-size: 2rem;
-    color: #0f0f0f;
-    margin: 1rem;
-    width: 100%;
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    border: 1px solid  #6C63FF;
-    -webkit-text-fill-color: #0f0f0f;
-    -webkit-box-shadow: 0 0 0px 1000px lightgreen inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-
-  input,
-  textarea {
-    padding: 1rem;
-    font-size: 2.2rem;
-    border: none;
-    border-bottom: 1px dotted #0f0f0f;
-    margin-bottom: 1rem;
-    background: #E4E1FF;
-    border-radius: 3px;
-    width: 100%;
-
-    &[type='submit'] {
-      background:  #6C63FF;
-      color: #0f0f0f;
-      cursor: pointer;
-      border-radius: 5rem;
-      text-transform: uppercase;
-      position: relative;
-      top: 0;
-
-      :hover {
-        top: 2px;
-      }
-
-      :active {
-        top: 4px;
-      }
-    }
-  }
-  textarea {
-    margin-bottom: 3rem;
-  }
-`;
-
 // =================================
 // ===========  COMPONENT  =========
 // =================================
@@ -153,3 +88,68 @@ class ContactForm extends Component {
 }
 
 export default ContactForm;
+
+// ==============================
+// ===========  STYLES  =========
+// ==============================
+
+const Form = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+  label {
+    font-size: 2rem;
+    color: #0f0f0f;
+    margin: 1rem;
+    width: 100%;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid  #6C63FF;
+    -webkit-text-fill-color: #0f0f0f;
+    -webkit-box-shadow: 0 0 0px 1000px lightgreen inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+    font-size: 2.2rem;
+    border: none;
+    border-bottom: 1px dotted #0f0f0f;
+    margin-bottom: 1rem;
+    background: #E4E1FF;
+    border-radius: 3px;
+    width: 100%;
+
+    &[type='submit'] {
+      background:  #6C63FF;
+      color: #0f0f0f;
+      cursor: pointer;
+      border-radius: 5rem;
+      text-transform: uppercase;
+      position: relative;
+      top: 0;
+
+      :hover {
+        top: 2px;
+      }
+
+      :active {
+        top: 4px;
+      }
+    }
+  }
+  textarea {
+    margin-bottom: 3rem;
+  }
+`;

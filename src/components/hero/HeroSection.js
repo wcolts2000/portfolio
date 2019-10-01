@@ -4,6 +4,38 @@ import { Link } from 'react-scroll';
 import heroImg from '../../assets/hero-logos.svg';
 import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg';
 
+// =================================
+// ===========  COMPONENT  =========
+// =================================
+
+function HeroSection() {
+  return (
+    <Section id="hero">
+      <div className="left">
+      <img src={logo} alt="pheneger development" />
+      <h3>Full Stack Software Engineer</h3>
+      <p>Hi, my name is Sean. I love coding, creating things, problem solving, and I never want to stop learning! If you're looking for a developer for your next project, we should talk.</p>
+      <Link
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-60}
+        duration={500}
+        to="contact"
+      >
+        Get In Touch
+      </Link>
+
+      </div>
+      <div className="right">
+        <img src={heroImg} alt="developer illustration" />
+      </div>
+    </Section>
+  );
+}
+
+export default HeroSection;
+
 // ==============================
 // ===========  STYLES  =========
 // ==============================
@@ -114,36 +146,3 @@ const Section = styled.section`
     }
   }
 `;
-
-// =================================
-// ===========  COMPONENT  =========
-// =================================
-
-
-function HeroSection() {
-  return (
-    <Section id="hero">
-      <div className="left">
-      <img src={logo} alt="pheneger development" />
-      <h3>Full Stack Software Engineer</h3>
-      <p>Hi, my name is Sean. I love coding, creating things, problem solving, and I never want to stop learning! If you're looking for a developer for your next project, we should talk.</p>
-      <Link
-        activeClass="active"
-        spy={true}
-        smooth
-        offset={-60}
-        duration={500}
-        to="contact"
-      >
-        Get In Touch
-      </Link>
-
-      </div>
-      <div className="right">
-        <img src={heroImg} alt="developer illustration" />
-      </div>
-    </Section>
-  );
-}
-
-export default HeroSection;

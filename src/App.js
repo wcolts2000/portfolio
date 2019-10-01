@@ -7,14 +7,6 @@ import ProjectsSection from './components/projects/ProjectsSection';
 import SkillsSection from './components/skills/SkillsSection';
 import ContactSection from './components/contact/ContactSection';
 
-// ==============================
-// ===========  STYLES  =========
-// ==============================
-
-const ContentsWrapper = styled.div`
-  flex: 1 0 auto;
-`;
-
 // =================================
 // ===========  COMPONENT  =========
 // =================================
@@ -37,3 +29,11 @@ function App() {
 }
 
 export default App;
+
+// ==============================
+// ===========  STYLES  =========
+// ==============================
+
+const ContentsWrapper = styled.div`
+  flex: 1 0 auto;
+`;

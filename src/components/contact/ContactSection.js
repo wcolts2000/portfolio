@@ -4,6 +4,58 @@ import ContactForm from './ContactForm';
 import ProjectForm from './ProjectForm';
 import map from '../../assets/map.png';
 
+// =================================
+// ===========  COMPONENT  =========
+// =================================
+
+class ContactSection extends Component {
+  state = {
+    simple: true
+  };
+
+  toggleForm = ({ target: { id } }) =>
+    this.setState({ simple: id === 'simple' ? true : false });
+
+  render() {
+    return (
+      <Section id="contact">
+        <h2>CONTACT</h2>
+        <Wrapper active={this.state.simple}>
+          <div className="left">
+            <p className="form-toggle">
+              <Span
+                active={this.state.simple}
+                id="simple"
+                onClick={this.toggleForm}
+              >
+                Quick Message
+              </Span>
+              <Span
+                active={!this.state.simple}
+                id="project"
+                onClick={this.toggleForm}
+              >
+                Project Inquiry
+              </Span>
+            </p>
+            {this.state.simple ? <ContactForm /> : <ProjectForm />}
+          </div>
+          <div className="right">
+            <p>Let's collaborate</p>
+            <p>
+              Do you have a project you are working on <br />
+              or is there that one idea you are dreaming about creating?
+            </p>
+            <p>We should chat, I may be able to help!</p>
+          </div>
+        </Wrapper>
+      </Section>
+    );
+  }
+}
+
+export default ContactSection;
+
 // ==============================
 // ===========  STYLES  =========
 // ==============================
@@ -85,7 +137,6 @@ const Section = styled.section`
 `;
 
 const Wrapper = styled.div`
-  /* height: ${props => (props.active ? '638px' : '842px')}; */
   display: flex;
   width: 100%;
   margin-bottom: 2rem;
@@ -112,55 +163,3 @@ const Span = styled.span`
     color:  #6C64FF;
   }
 `;
-
-// =================================
-// ===========  COMPONENT  =========
-// =================================
-
-class ContactSection extends Component {
-  state = {
-    simple: true
-  };
-
-  toggleForm = ({ target: { id } }) =>
-    this.setState({ simple: id === 'simple' ? true : false });
-
-  render() {
-    return (
-      <Section id="contact">
-        <h2>CONTACT</h2>
-        <Wrapper active={this.state.simple}>
-          <div className="left">
-            <p className="form-toggle">
-              <Span
-                active={this.state.simple}
-                id="simple"
-                onClick={this.toggleForm}
-              >
-                Quick Message
-              </Span>
-              <Span
-                active={!this.state.simple}
-                id="project"
-                onClick={this.toggleForm}
-              >
-                Project Inquiry
-              </Span>
-            </p>
-            {this.state.simple ? <ContactForm /> : <ProjectForm />}
-          </div>
-          <div className="right">
-            <p>Let's collaborate</p>
-            <p>
-              Do you have a project you are working on <br />
-              or is there that one idea you are dreaming about creating?
-            </p>
-            <p>We should chat, I may be able to help!</p>
-          </div>
-        </Wrapper>
-      </Section>
-    );
-  }
-}
-
-export default ContactSection;
