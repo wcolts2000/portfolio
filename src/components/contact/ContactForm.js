@@ -17,6 +17,7 @@ class ContactForm extends Component {
   inputChangeHandler = ({ target: { name, value } }) => {
     this.setState({ [name]: value });
   };
+
   submitHandler = e => {
     fetch('/', {
       method: 'POST',
@@ -28,10 +29,16 @@ class ContactForm extends Component {
         message: this.state.message
       })
     })
-      .then(() => alert('Success!'))
-      .catch(error => alert(error));
+      .then(() =>{
+        this.props.toggleModal("Success", "Thank you for your interest. I will get back to you as soon as possible")
+      })       
+      .catch(error => this.props.toggleModal("Error", error));
     e.preventDefault();
-    console.log('formstate', this.state);
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    })
   };
   render() {
     const { name, email, message } = this.state;

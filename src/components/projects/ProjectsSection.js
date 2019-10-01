@@ -135,13 +135,17 @@ export default ProjectsSection;
 
 const Section = styled.section`
   width: 100%;
-  padding: 4.5rem;
+  padding: 8rem 4.5rem;
   background-color: #b8f9e6;
+  position: relative;
 
   h2 {
+    top: -55px;
+    left: 0;
+    position: absolute;
     text-align: left;
     font-weight: bold;
-    padding: 1.6rem;
+    padding: 2.6rem 5rem;
     color: #26235a;
     text-transform: uppercase;
     -webkit-letter-spacing: 5.5px;
@@ -149,9 +153,8 @@ const Section = styled.section`
     -ms-letter-spacing: 5.5px;
     letter-spacing: 5.5px;
     background: #fff;
-    display: inline-block;
     margin: 2.6rem 0 4rem;
-    font-size: 2.6rem;
+    font-size: 3.6rem;
   }
 
   .container {

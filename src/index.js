@@ -14,7 +14,7 @@ import {
   faUsers,
   faPhone,
   faPenNib,
-  faDesktop
+  faDesktop,
 } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
@@ -30,7 +30,7 @@ library.add(
   faUsers,
   faPhone,
   faPenNib,
-  faDesktop
+  faDesktop,
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -25,11 +25,20 @@ class ContactForm extends Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'project', ...this.state })
     })
-      .then(() => alert('Success!'))
-      .catch(error => alert(error));
-    e.preventDefault();
-    console.log('formstate', this.state);
-  };
+    .then(() =>{
+      this.props.toggleModal("Success", "Thank you for your interest. I will get back to you as soon as possible")
+    })       
+    .catch(error => this.props.toggleModal("Error", error));
+  e.preventDefault();
+  this.setState({
+    name: '',
+    email: '',
+    message: '',
+    duration: '',
+    company: '',
+    budget: ''
+  })
+}
 
   render() {
     const { name, email, message, company, budget } = this.state;

@@ -17,6 +17,7 @@ class ContactSection extends Component {
     this.setState({ simple: id === 'simple' ? true : false });
 
   render() {
+    const { toggleModal } = this.props
     return (
       <Section id="contact">
         <h2>CONTACT</h2>
@@ -38,7 +39,7 @@ class ContactSection extends Component {
                 Project Inquiry
               </Span>
             </p>
-            {this.state.simple ? <ContactForm /> : <ProjectForm />}
+            {this.state.simple ? <ContactForm toggleModal={toggleModal} /> : <ProjectForm toggleModal={toggleModal} />}
           </div>
           <div className="right">
             <p>Let's collaborate</p>
@@ -61,35 +62,26 @@ export default ContactSection;
 // ==============================
 
 const Section = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 6rem 1.5rem;
-  align-items: flex-start;
+  padding: 8rem 4.5rem;
   background: #B8F9E6;
+  position: relative;
 
   h2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 3.6rem;
-    padding: 0 2.5rem 2.5rem;
+    top: -55px;
+    left: 0;
+    position: absolute;
+    text-align: left;
     font-weight: bold;
-    letter-spacing: 10px;
-    position: relative;
-    margin-bottom: 1.5rem;
-    width: 100%;
-
-    ::after {
-      display: inline-block;
-      content: '';
-      position: absolute;
-      left: 2.5rem;
-      right: 0;
-      bottom: 0;
-      width: 82%;
-      height: 3px;
-      background: #0f0f0f;
-    }
+    padding: 2.6rem 5rem;
+    color: #26235a;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 5.5px;
+    -moz-letter-spacing: 5.5px;
+    -ms-letter-spacing: 5.5px;
+    letter-spacing: 5.5px;
+    background: #fff;
+    margin: 2.6rem 0 4rem;
+    font-size: 3.6rem;
   }
 
   p {
@@ -109,7 +101,7 @@ const Section = styled.section`
 
   form {
     width: 100%;
-    background-color: white;
+    background-color: cadetblue;
   }
 
   .left {

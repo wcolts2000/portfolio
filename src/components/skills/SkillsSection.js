@@ -40,11 +40,24 @@ const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 4.5rem;
+  padding: 8rem 4.5rem;
   
   .main {
-    font-size: 2.6rem;
-    display: inline-block;
+    top: -55px;
+    right: 0;
+    position: absolute;
+    text-align: left;
+    font-weight: bold;
+    padding: 2.6rem 5rem;
+    color: #26235a;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 5.5px;
+    -moz-letter-spacing: 5.5px;
+    -ms-letter-spacing: 5.5px;
+    letter-spacing: 5.5px;
+    background: #fff;
+    margin: 2.6rem 0 4rem;
+    font-size: 3.6rem;
   }
   
   h2 {
@@ -66,6 +79,8 @@ const Section = styled.section`
     display: flex;
     justify-content: space-around;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 
     ::before, ::after {
       content: "";
