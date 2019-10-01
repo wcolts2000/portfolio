@@ -37,15 +37,15 @@ const Section = styled.section`
   .card {
     width: 270.5px;
     perspective: 800px;
-    height: 400px;
+    height: 420px;
     margin: 2rem;
   }
 
   .card__content {
-    height: 400px;
+    height: 420px;
     text-align: center;
     position: relative;
-    padding: 15em 5em;
+    padding: 2rem;
     transition: transform 2s;
     transform-style: preserve-3d;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
@@ -63,7 +63,7 @@ const Section = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10rem 1rem;
+    /* padding: 10rem 1rem; */
     backface-visibility: hidden;
     transform-style: preserve-3d;
     display: grid;
@@ -104,18 +104,16 @@ const Section = styled.section`
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 2;
-    padding: 2rem 0;
   }
   .card__back {
     transform: rotateY(0.5turn);
     color: white;
     background: #26235a;
-    padding: 1rem 2.6rem 0;
+    padding: 2rem 2.6rem;
 
     h3 {
       font-size: 2rem;
       line-height: 1.5;
-      margin-bottom: 3rem;
       transform: translateZ(3rem);
     }
 
@@ -128,7 +126,7 @@ const Section = styled.section`
         display: flex;
         color: white;
         font-size: 2rem;
-        line-height: 1.1;
+        line-height: 1.6;
         letter-spacing: 2.5px;
         font-weight: bold;
         margin: 1rem 0;
