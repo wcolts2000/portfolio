@@ -82,6 +82,7 @@ const Section = styled.section`
     background: #fff;
     margin: 2.6rem 0 4rem;
     font-size: 3.6rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   }
 
   p {

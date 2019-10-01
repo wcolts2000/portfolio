@@ -40,7 +40,7 @@ const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 8rem 4.5rem;
+  padding: 20rem 4.5rem;
   
   .main {
     top: -55px;
@@ -58,6 +58,7 @@ const Section = styled.section`
     background: #fff;
     margin: 2.6rem 0 4rem;
     font-size: 3.6rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   }
   
   h2 {

@@ -123,6 +123,9 @@ function ProjectsSection() {
           </div>
         </div>
       </div>
+      <p className="description">Here are a few projects you might like looking through. These have been built using React and Redux and the Blog is built with GatsbyJS. All the styling in them have been done with styled-components and native CSS3 and HTML5 semantic tags. No styling libraries were utilized in these featured sites. If you want to see some more you will find a more comprehensive list of sites and apps I've created over at <a target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://pretty-good-gatsby-blog.netlify.com/">my personal Blog Site</a></p>
     </Section>
   );
 }
@@ -135,9 +138,13 @@ export default ProjectsSection;
 
 const Section = styled.section`
   width: 100%;
-  padding: 8rem 4.5rem;
+  padding: 8rem 4.5rem 20rem;
   background-color: #b8f9e6;
   position: relative;
+
+  @media (max-width: 800px) {
+    padding-bottom: 8rem;
+  }
 
   h2 {
     top: -55px;
@@ -155,6 +162,7 @@ const Section = styled.section`
     background: #fff;
     margin: 2.6rem 0 4rem;
     font-size: 3.6rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   }
 
   .container {
@@ -196,6 +204,7 @@ const Section = styled.section`
     transform-style: preserve-3d;
     display: grid;
     align-content: center;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   }
 
   .card__front::before {
@@ -278,6 +287,35 @@ const Section = styled.section`
         margin: 0 1.6rem;
 
       }
+    }
+  }
+
+  p.description {
+    font-size: 2rem;
+    position: absolute;
+    width: 450px;
+    z-index: 100;
+    line-height: 1.5;
+    background-color: #5F9EA0;
+    outline: 10px solid #5F9EA0;
+    outline-offset: 8px;
+    padding: 2rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    
+    a {
+      text-shadow: 1px 1px 2px white;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #6C64FF;
+      font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+      position: relative;
+      width: 90%;
+      margin: 2rem auto;
     }
   }
 `;
