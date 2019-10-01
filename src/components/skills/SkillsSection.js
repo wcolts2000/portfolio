@@ -21,8 +21,6 @@ function SkillsSection() {
           <li>CSS3</li>
           <li>LESS</li>
           <li>SASS</li>
-          <li>Node</li>
-          <li>Express</li>
         </ul>
         <img src={skills} alt="library and language logos" />
       </div>
@@ -102,11 +100,12 @@ const Section = styled.section`
   }
 
   li {
-    font-size: 2.6rem;
+    font-size: 3rem;
     min-width: 10%;
     letter-spacing: 2.5px;
     font-weight: bold;
     margin: 1.6rem;
+    text-shadow: 2px 2px black;
   }
 
   img {
