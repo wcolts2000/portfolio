@@ -41,7 +41,7 @@ const Nav = styled.nav`
   a {
     color:  #000;
     font-size: 1.6rem;
-    font-weight: bold
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
