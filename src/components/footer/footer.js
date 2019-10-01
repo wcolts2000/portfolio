@@ -16,9 +16,6 @@ const Footer = () => {
         >
           <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />
         </a>
-        <a href="mailto:wcolts2000@gmail.com">
-          <FontAwesomeIcon className="footer-icon" icon="envelope" />
-        </a>
         <a
           href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
           target="_blank"
