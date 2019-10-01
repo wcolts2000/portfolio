@@ -60,6 +60,9 @@ const Form = styled.form`
       }
     }
   }
+  textarea {
+    margin-bottom: 3rem;
+  }
 `;
 
 // =================================
