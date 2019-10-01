@@ -120,31 +120,37 @@ const Section = styled.section`
     }
 
     .icon-container {
-      display: flex;
       width: 100%;
       padding: 1rem;
       justify-content: space-around;
 
       a {
         display: flex;
-        flex-direction: column;
         color: white;
-        font-size: 1.6rem;
-        margin: 2rem;
+        font-size: 2rem;
+        line-height: 1.1;
+        letter-spacing: 2.5px;
+        font-weight: bold;
+        margin: 1rem 0;
         text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
         text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        border: 2px solid white;
+        
+        :hover {
+          border: 2px solid white;
+          background: white;
+          color: #26235a;
+        }
       }
 
       .icon {
         transform: translateZ(3rem);
-        font-size: 4rem;
-        color: white;
-        transition: color 0.3s ease-in-out;
-        margin-bottom: 1.6rem;
+        font-size: 2rem;
+        margin: 0 1.6rem;
 
-        :hover {
-          color: #6c63ff;
-        }
       }
     }
   }
@@ -192,14 +198,14 @@ function ProjectsSection() {
                   rel="noopener noreferrer"
                   href="https://github.com/wcolts2000/cool_table"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} />Code
+                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> Code
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://cool-table.netlify.com/"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />Live
+                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> Live
                 </a>
               </div>
             </div>
@@ -230,14 +236,14 @@ function ProjectsSection() {
                   rel="noopener noreferrer"
                   href="https://github.com/wcolts2000/front-end-project-week"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} />Code
+                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> Code
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://lambda-notes-live.netlify.com"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />live
+                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> live
                 </a>
               </div>
             </div>
@@ -266,14 +272,14 @@ function ProjectsSection() {
                   rel="noopener noreferrer"
                   href="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} />code
+                  <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> code
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://pretty-good-gatsby-blog.netlify.com/"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />live
+                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> live
                 </a>
               </div>
             </div>
