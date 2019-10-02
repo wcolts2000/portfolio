@@ -41,7 +41,7 @@ const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 14rem 4.5rem;
+  padding: 14rem 4.5rem 16rem;
 
   @media (max-width: 800px) {
     padding-bottom: 5rem;
@@ -79,7 +79,7 @@ const Section = styled.section`
   }
   
   .skills-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.8)), url(${brainstorm}) no-repeat bottom;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)), url(${brainstorm}) no-repeat bottom;
     background-size: cover;
     padding: 2rem;
     display: flex;
@@ -93,7 +93,7 @@ const Section = styled.section`
       position: absolute;
     }
     ::before {
-      background:  #B8F9E6AA;
+      background:  #B8F9E6DD;
       top: 0;
       left:0;
       right: 50%;
@@ -116,7 +116,7 @@ const Section = styled.section`
     padding: 2.6rem;
     margin-bottom: 2.5rem;
     width: 40%;
-    color: white;
+    color: black;
     z-index: 3;    
   }
 
@@ -126,7 +126,7 @@ const Section = styled.section`
     letter-spacing: 2.5px;
     font-weight: bold;
     margin: 1.6rem;
-    text-shadow: 2px 2px black;
+    /* text-shadow: 2px 2px black; */
   }
 
   img {
@@ -147,7 +147,7 @@ const Section = styled.section`
     color: white;
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-    bottom: -100px;
+    bottom: -150px;
     
     @media (max-width: 950px) {
       width: 50%;
