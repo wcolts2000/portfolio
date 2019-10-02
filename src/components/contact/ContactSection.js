@@ -62,9 +62,17 @@ export default ContactSection;
 // ==============================
 
 const Section = styled.section`
-  padding: 8rem 4.5rem;
+  padding: 16rem 4.5rem;
   background: #B8F9E6;
   position: relative;
+  
+  @media (max-width: 950px) {
+    padding: 24rem 4.5rem 16rem;    
+  }
+
+  @media (max-width: 800px) {
+    padding: 8rem 4.5rem; 
+  }
 
   h2 {
     top: -55px;

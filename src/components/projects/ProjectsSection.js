@@ -293,7 +293,7 @@ const Section = styled.section`
   p.description {
     font-size: 2rem;
     position: absolute;
-    width: 450px;
+    width: 60%;
     z-index: 100;
     line-height: 1.5;
     background-color: #5F9EA0;
