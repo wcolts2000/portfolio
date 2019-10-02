@@ -147,12 +147,14 @@ const Section = styled.section`
     color: white;
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-
+    bottom: -100px;
+    
     @media (max-width: 950px) {
       width: 50%;
     }
-
+    
     @media (max-width: 800px) {
+      bottom: unset;
       position: relative;
       width: auto;
       margin: 8rem auto 4rem;
