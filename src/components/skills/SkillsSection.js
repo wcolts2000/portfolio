@@ -24,7 +24,7 @@ function SkillsSection() {
         </ul>
         <img src={skills} alt="library and language logos" />
       </div>
-      <p className="skills-caption">With most of my experience being in JavaScript, I have found building applications in ReactJS to be very productive and enjoyable. I also love Redux for complex state management and enjoy PreProcessors and/or enjoy using Styled-Components for styling. If you need a backend, I am familiar with NodeJS and Django as well.</p>
+      <p className="skills-caption">With most of my experience being in JavaScript, I have found building applications in ReactJS to be very productive and enjoyable. I also love Redux for complex state management and enjoy PreProcessors and using Styled-Components when i am styling my sites. If you need a backend, I am familiar with NodeJS, Express and Django as well.</p>
     </Section>
   );
 }
@@ -147,7 +147,7 @@ const Section = styled.section`
     color: white;
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-    bottom: -150px;
+    bottom: -80px;
     
     @media (max-width: 950px) {
       width: 50%;
