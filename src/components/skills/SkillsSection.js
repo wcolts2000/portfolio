@@ -24,7 +24,7 @@ function SkillsSection() {
         </ul>
         <img src={skills} alt="library and language logos" />
       </div>
-      <p className="skills-caption">With most of my experience being in JavaScript, I have found building applications in ReactJS to be very productive and enjoyable. I also love Redux for complex state management and enjoy PreProcessors and using Styled-Components when i am styling my sites. If you need a backend, I am familiar with NodeJS, Express and Django as well.</p>
+      <p className="skills-caption">With most of my experience being in JavaScript, I have found building applications in ReactJS to be very productive and enjoyable. I also love Redux for complex state management and enjoy PreProcessors and using Styled-Components when I am styling my sites. If you need a backend, I am familiar with NodeJS, Express and Django as well.</p>
     </Section>
   );
 }
