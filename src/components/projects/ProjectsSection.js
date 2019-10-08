@@ -183,7 +183,7 @@ const Section = styled.section`
     text-align: center;
     position: relative;
     padding: 2rem;
-    transition: transform 2s;
+    transition: transform 1s;
     transform-style: preserve-3d;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   }
