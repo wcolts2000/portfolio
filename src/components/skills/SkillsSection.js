@@ -79,8 +79,7 @@ const Section = styled.section`
   }
   
   .skills-container {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)), url(${brainstorm}) no-repeat bottom;
-    background-size: cover;
+    background: white;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
