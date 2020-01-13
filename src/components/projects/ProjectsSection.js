@@ -325,5 +325,5 @@ const Front = styled.div`
   background-position: top;
   background-blend-mode: multiply;
   color: #333;
-  background-image: url(${props => props.url});
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${props => props.url});
 `;
