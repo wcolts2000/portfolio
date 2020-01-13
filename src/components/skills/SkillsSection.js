@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import bg from '../../assets/codingbg.jpg';
 import skills from '../../assets/skills-logos.svg';
-import brainstorm from '../../assets/brainstorming.jpg';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -125,7 +124,6 @@ const Section = styled.section`
     letter-spacing: 2.5px;
     font-weight: bold;
     margin: 1.6rem;
-    /* text-shadow: 2px 2px black; */
   }
 
   img {

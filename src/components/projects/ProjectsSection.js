@@ -14,35 +14,34 @@ function ProjectsSection() {
         <div className="card">
           <div className="card__content">
             <Front
-              url={require('../../assets/cooltbl.jpg')}
+              url={require('../../assets/connectourkids.jpg')}
               className="card__front"
             >
               <div className="card__title">
-                Cool <br />
-                Table
+                Connect <br />
+                Our Kids
               </div>
-              <div className="card__subtitle">a study app</div>
+              <div className="card__subtitle">A react native app</div>
             </Front>
             <div className="card__back">
-              <h3>Cool Table: Custom Quizzes with ReactJS</h3>
+              <h3>Connect Our Kids: A People Search App</h3>
               <p className="card__body">
-                A multi-user site where you can create, take, and share quizzes
-                and notes
+              Helping Social Workers find extended family members for children entering the foster care system.
               </p>
               <div className="icon-container">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/wcolts2000/cool_table"
+                  href="https://github.com/labs13-connect-kids/mobile"
                 >
                   <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> Code
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://cool-table.netlify.com/"
+                  href="https://expo.io/@connectourkids/connectOurKids?release-channel=staging"
                 >
-                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> Live
+                  <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> Beta
                 </a>
               </div>
             </div>
@@ -51,34 +50,33 @@ function ProjectsSection() {
         <div className="card">
           <div className="card__content">
             <Front
-              url={require('../../assets/notes.jpg')}
+              url={require('../../assets/hurryupprint.jpg')}
               className="card__front"
             >
               <div className="card__title">
-                Lambda <br />
-                Notes
+                Hurry <br />
+                Up Print
               </div>
-              <div className="card__subtitle">Note Taking App</div>
+              <div className="card__subtitle">A printshop website</div>
             </Front>
             <div className="card__back">
-              <h3>Lambda Notes with <br/>ReactJS</h3>
+              <h3>Hurry Up Print e-commerce site</h3>
               <p className="card__body">
                 {' '}
-                A multi-user notes application with CSV export and drag-n-drop
-                functionality.
+                An e-commerce print shop site with user login and admin dashboard features.
               </p>
               <div className="icon-container">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/wcolts2000/front-end-project-week"
+                  href="https://github.com/wcolts2000/hup-client/"
                 >
                   <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> Code
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://lambda-notes-live.netlify.com"
+                  href="https://hurryupprint.com"
                 >
                   <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> live
                 </a>
@@ -93,15 +91,16 @@ function ProjectsSection() {
               className="card__front"
             >
               <div className="card__title">
-                My <br /> Blog
+                Resources <br /> 
+                and Notes
               </div>
-              <div className="card__subtitle">blog/Resources</div>
+              <div className="card__subtitle">Notes/Resources</div>
             </Front>
             <div className="card__back">
-              <h3>Personal Blog and Reference Site</h3>
+              <h3>Personal Notes and Reference Lists</h3>
               <p className="card__body">
                 {' '}
-                A blog and useful resources compilation made with GatsbyJS.
+                A static site of useful resources made with GatsbyJS.
               </p>
               <div className="icon-container">
                 <a
@@ -123,9 +122,9 @@ function ProjectsSection() {
           </div>
         </div>
       </div>
-      <p className="description">Here are a few projects you might like looking through. These have been built using React and Redux and the Blog is built with GatsbyJS. All the styling in them have been done with styled-components and native CSS3 and HTML5 semantic tags. No styling libraries were utilized in these featured sites. If you want to see some more you will find a more comprehensive list of sites and apps I've created over at <a target="_blank"
+      <p className="description">Here are a few projects you might like looking through. These have been built using React, Gatsby, React Native, and PHP and the Blog is built with GatsbyJS. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags. The Hurry Up Print site is utilizing customized MaterializeCSS and the react native app is using react-native-elements and custom styles. If you want to see some more you will find a more comprehensive list of sites and apps I've created over at <a target="_blank"
                   rel="noopener noreferrer"
-                  href="https://pretty-good-gatsby-blog.netlify.com/">my personal Blog Site</a></p>
+                  href="https://pretty-good-gatsby-blog.netlify.com/">my Resources and Notes Site</a></p>
     </Section>
   );
 }
