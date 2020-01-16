@@ -147,10 +147,10 @@ const Section = styled.section`
 
   form {
     width: 100%;
-    background-color: cadetblue;
   }
-
+  
   .left {
+    background-color: cadetblue;
     width: 50%;
 
     @media (max-width: 750px) {
