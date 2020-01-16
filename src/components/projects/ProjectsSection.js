@@ -91,8 +91,8 @@ function ProjectsSection() {
               className="card__front"
             >
               <div className="card__title">
-                Resources <br /> 
-                and Notes
+                GatsbyJS <br /> 
+                Blog Site
               </div>
               <div className="card__subtitle">Notes/Resources</div>
             </Front>
@@ -232,7 +232,6 @@ const Section = styled.section`
     letter-spacing: 4px;
     font-size: 1rem;
     font-weight: bold;
-    opacity: 0.7;
   }
 
   .card__body {

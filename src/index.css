@@ -375,3 +375,10 @@ img {
   height: auto;
   object-fit: contain;
 }
+
+#profilePic {
+  width: 150px;
+  overflow: hidden;
+  /* border-radius: 10%; */
+  margin: 2rem;
+}

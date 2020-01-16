@@ -14,7 +14,7 @@ function HeroSection() {
       <div className="left">
       <img src={logo} alt="pheneger development" />
       <h3>Full Stack Software Engineer</h3>
-      <p>Hi, my name is Sean. I love coding, creating things, problem solving, and I never want to stop learning! If you're looking for a developer for your next project, we should talk.</p>
+      <p>Hi, my name is Sean. I love coding, creating things, problem solving, and I never want to stop learning! If you're looking for a developer for your next project or to join your team, we should talk.</p>
       <Link
         activeClass="active"
         spy={true}

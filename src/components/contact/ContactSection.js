@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import ProjectForm from './ProjectForm';
 import map from '../../assets/map.png';
+import profilePic from '../../assets/profileImgSm.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -17,7 +19,7 @@ class ContactSection extends Component {
     this.setState({ simple: id === 'simple' ? true : false });
 
   render() {
-    const { toggleModal } = this.props
+    const { toggleModal } = this.props;
     return (
       <Section id="contact">
         <h2>CONTACT</h2>
@@ -39,15 +41,51 @@ class ContactSection extends Component {
                 Project Inquiry
               </Span>
             </p>
-            {this.state.simple ? <ContactForm toggleModal={toggleModal} /> : <ProjectForm toggleModal={toggleModal} />}
+            {this.state.simple ? (
+              <ContactForm toggleModal={toggleModal} />
+            ) : (
+              <ProjectForm toggleModal={toggleModal} />
+            )}
           </div>
           <div className="right">
-            <p>Let's collaborate</p>
+            <h3>Get In Touch</h3>
+            <img
+              id="profilePic"
+              src={profilePic}
+              alt="Sean Pheneger, full stack developer"
+            />
+
+            <div className="social-links">
+              <a
+                href="https://github.com/wcolts2000?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="footer-icon"
+                  icon={['fab', 'github']}
+                />  Github Repos
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="footer-icon"
+                  icon={['fab', 'linkedin']}
+                />
+                Linked In Profile
+              </a>
+            </div>
             <p>
-              Do you have a project you are working on <br />
-              or is there that one idea you are dreaming about creating?
+              Find me on LinkedIn and check out some projects from my github to
+              see what exciting new things I have been building.
             </p>
-            <p>We should chat, I may be able to help!</p>
+            <p>
+              You can also submit a message or project inquiry in the form as
+              well.
+            </p>
           </div>
         </Wrapper>
       </Section>
@@ -63,11 +101,11 @@ export default ContactSection;
 
 const Section = styled.section`
   padding: 16rem 4.5rem;
-  background: #B8F9E6;
+  background: #b8f9e6;
   position: relative;
 
   @media (max-width: 800px) {
-    padding: 8rem 4.5rem; 
+    padding: 8rem 4.5rem;
   }
 
   h2 {
@@ -96,7 +134,7 @@ const Section = styled.section`
   }
 
   .form-toggle {
-    background: #E4E1FF;
+    background: #e4e1ff;
     width: 100%;
     display: flex;
     padding: 0;
@@ -120,15 +158,49 @@ const Section = styled.section`
   .right {
     width: 50%;
     padding: 2rem;
-    background: linear-gradient(#E4E1FF 20%, rgba(0, 0, 255, 0)), url(${map});
+    background: linear-gradient(#e4e1ff 20%, rgba(0, 0, 255, 0)), url(${map});
     background-size: cover;
+
+    h3 {
+      font-size: 2rem;
+      padding: 0 2rem;
+    }
+    
+    img {
+      float: left;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+      }
+
+      a svg path {
+        fill: black;
+      }
+    }
+
+
+
+
     p {
       color: #0f0f0f;
       width: 100%;
+      font-weight: bold;
     }
 
     @media (max-width: 750px) {
-      display: none;
+      display: block;
+      width: 100%;
+      order: -1;
     }
   }
 `;
@@ -157,6 +229,6 @@ const Span = styled.span`
   padding-bottom: ${props => (props.active ? '1.7rem' : '2rem')};
 
   :hover {
-    color:  #6C64FF;
+    color: #6c64ff;
   }
 `;
