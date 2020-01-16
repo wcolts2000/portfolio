@@ -46,6 +46,11 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <ul>
+            <li>React Native</li>
+            <li>EXPO</li>
+            <li>Native Base</li>
+          </ul>
         </div>
         <div className="card">
           <div className="card__content">
@@ -63,7 +68,7 @@ function ProjectsSection() {
               <h3>Hurry Up Print e-commerce site</h3>
               <p className="card__body">
                 {' '}
-                An e-commerce print shop site with user login and admin dashboard features.
+                An e-commerce print shop site with user login and admin dashboard features and pricing calculators.
               </p>
               <div className="icon-container">
                 <a
@@ -83,6 +88,11 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Materialize CSS</li>
+          </ul>
         </div>
         <div className="card">
           <div className="card__content">
@@ -100,7 +110,7 @@ function ProjectsSection() {
               <h3>Personal Notes and Reference Lists</h3>
               <p className="card__body">
                 {' '}
-                A static site of useful resources made with GatsbyJS.
+                Useful resources, notes, a blog, and project links made with GatsbyJS.
               </p>
               <div className="icon-container">
                 <a
@@ -120,12 +130,18 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <ul>
+            <li>GatsbyJS</li>
+            <li>Contentful CMS</li>
+            <li>Redux</li>
+            <li>Styled-Components</li>
+          </ul>
         </div>
       </div>
       <p className="description">Here are a few projects you might like looking
       through. These have been built using React, React Native, and PHP. The
       Blog Site is built with GatsbyJS to render the static pages while still using React. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags. The Hurry Up Print
-      site is utilizing customized MaterializeCSS and the react native app is using react-native-elements and custom styles.
+      site is utilizing customized MaterializeCSS and the react native app is using react-native-elements, native base and custom styles.
       </p>
     </Section>
   );
@@ -170,13 +186,18 @@ const Section = styled.section`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 10rem;
   }
 
   .card {
     width: 270.5px;
     perspective: 800px;
     height: 420px;
-    margin: 2rem;
+    margin: 7rem 0;
+
+    ul {
+      font-size: 2rem;
+    }
   }
 
   .card__content {
