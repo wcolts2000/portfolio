@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import heroImg from '../../assets/hero-logos.svg';
 import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg';
+import { useTransition, animated } from 'react-spring';
 
 // =================================
 // ===========  COMPONENT  =========
 // =================================
 
-function HeroSection() {
+function LeftSection() {
   return (
-    <Section id="hero">
-      <div className="left">
+    <div className="left">
       <img src={logo} alt="pheneger development" />
       <h3>Full Stack Software Engineer</h3>
       <p>Hi, my name is Sean. I love coding, creating things, problem solving, and I never want to stop learning! If you're looking for a developer for your next project or to join your team, we should talk.</p>
@@ -25,11 +25,35 @@ function HeroSection() {
       >
         Get In Touch
       </Link>
+    </div>
+  )
+}
 
-      </div>
-      <div className="right">
+function HeroSection() {
+  const [show, set] = useState(true)
+  const left = useTransition(show, null, {
+    from: {position: "relative", left: "-500px",  opacity: 0},
+    enter: {opacity: 1, left: "0px"},
+    leave: {opacity: 0},
+  })
+  const right = useTransition(show, null, {
+    from: {position: "relative", right: "-500px",  opacity: 0},
+    enter: {opacity: 1, right: "0px"},
+    leave: {opacity: 0},
+  })
+  return (
+    <Section id="hero">
+      {left.map(({item, key, props}) => item && 
+      
+      <animated.div key={key} style={props}><LeftSection/></animated.div>
+      )}
+      {right.map(({item, key, props}) => item && 
+
+      <animated.div key={key} style={props} className="right">
         <img src={heroImg} alt="developer illustration" />
-      </div>
+      </animated.div>
+      )
+      }
     </Section>
   );
 }
@@ -57,7 +81,7 @@ const Section = styled.section`
 
 .left {
     padding: 15rem 3rem;
-    width: 50%;
+    width: 70%;
     padding: 2.0rem;
   img {
     width: 70%;
@@ -69,7 +93,7 @@ const Section = styled.section`
 }
 }
 .right {
-    width: 50%;
+    width: 100%;
     padding: 2.0rem;
 @media (max-width: 800px) {
     display: none;
