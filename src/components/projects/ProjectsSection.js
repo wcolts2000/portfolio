@@ -122,9 +122,11 @@ function ProjectsSection() {
           </div>
         </div>
       </div>
-      <p className="description">Here are a few projects you might like looking through. These have been built using React, Gatsby, React Native, and PHP and the Blog is built with GatsbyJS. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags. The Hurry Up Print site is utilizing customized MaterializeCSS and the react native app is using react-native-elements and custom styles. If you want to see some more you will find a more comprehensive list of sites and apps I've created over at <a target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://pretty-good-gatsby-blog.netlify.com/">my Resources and Notes Site</a></p>
+      <p className="description">Here are a few projects you might like looking
+      through. These have been built using React, React Native, and PHP. The
+      Blog Site is built with GatsbyJS to render the static pages while still using React. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags. The Hurry Up Print
+      site is utilizing customized MaterializeCSS and the react native app is using react-native-elements and custom styles.
+      </p>
     </Section>
   );
 }
@@ -141,8 +143,8 @@ const Section = styled.section`
   background-color: #b8f9e6;
   position: relative;
 
-  @media (max-width: 800px) {
-    padding-bottom: 8rem;
+  @media (max-width: 1025px) {
+    padding-bottom: 6rem;
   }
 
   h2 {
@@ -301,6 +303,7 @@ const Section = styled.section`
     color: white;
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    bottom: -10%;
     
     a {
       text-shadow: 1px 1px 2px white;
@@ -310,10 +313,10 @@ const Section = styled.section`
       font-weight: bold;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1025px) {
       position: relative;
       width: 90%;
-      margin: 2rem auto;
+      margin: 2rem auto 0;
     }
   }
 `;

@@ -21,9 +21,22 @@ function SkillsSection() {
           <li>LESS</li>
           <li>SASS</li>
         </ul>
+        <ul>
+          <li>NODE</li>
+          <li>EXPRESS</li>
+          <li>PYTHON</li>
+          <li>DJANGO</li>
+          <li>RESTful</li>
+          <li>AGILE</li>
+          <li>SCRUM</li>
+        </ul>
         <img src={skills} alt="library and language logos" />
       </div>
-      <p className="skills-caption">With most of my experience being in JavaScript, I have found building applications in ReactJS to be very productive and enjoyable. I also love Redux for complex state management and enjoy PreProcessors and using Styled-Components when I am styling my sites. If you need a backend, I am familiar with NodeJS, Express and Django as well.</p>
+      <p className="skills-caption">With most of my experience being in JavaScript,
+      I have found building applications in ReactJS to be very productive and
+      enjoyable. I also love Redux for complex state management and enjoy
+      PreProcessors and using Styled-Components when I am styling my sites. If you
+      need a backend, I am familiar with NodeJS, Express and Django as well.</p>
     </Section>
   );
 }
@@ -86,6 +99,14 @@ const Section = styled.section`
     max-width: 1200px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1025px) {
+      margin: 0 auto 2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+
     ::before, ::after {
       content: "";
       position: absolute;
@@ -116,6 +137,10 @@ const Section = styled.section`
     width: 40%;
     color: black;
     z-index: 3;    
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   li {
@@ -124,10 +149,26 @@ const Section = styled.section`
     letter-spacing: 2.5px;
     font-weight: bold;
     margin: 1.6rem;
+
+    @media screen and (max-width: 1025px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 3rem;
+    }
   }
 
   img {
     width: 40%;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   p.skills-caption {
@@ -144,7 +185,7 @@ const Section = styled.section`
     color: white;
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-    bottom: -80px;
+    bottom: -10%;
     
     @media (max-width: 950px) {
       width: 50%;

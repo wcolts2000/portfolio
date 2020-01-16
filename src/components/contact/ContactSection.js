@@ -49,6 +49,7 @@ class ContactSection extends Component {
           </div>
           <div className="right">
             <h3>Get In Touch</h3>
+            <h3>Sean Pheneger | Full Stack Web Developer</h3>
             <img
               id="profilePic"
               src={profilePic}
@@ -66,6 +67,7 @@ class ContactSection extends Component {
                   icon={['fab', 'github']}
                 />  Github Repos
               </a>
+              <small>Check out some projects on my github.</small>
               <a
                 href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
                 target="_blank"
@@ -77,14 +79,15 @@ class ContactSection extends Component {
                 />
                 Linked In Profile
               </a>
+              <small>Find me on LinkedIn.</small>
             </div>
             <p>
-              Find me on LinkedIn and check out some projects from my github to
-              see what exciting new things I have been building.
+              I enjoy creating functional and aesthetically pleasing front ends and find
+              building apps that make a real difference, improving the clients productivity
+              and efficiency or offering a badly needed solution to some problem being faced.
             </p>
             <p>
-              You can also submit a message or project inquiry in the form as
-              well.
+              Reach out on LinkedIn or submit a message or project inquiry in the form and I will get back to you as soon as I can. I look forward to talking with you.
             </p>
           </div>
         </Wrapper>
@@ -168,11 +171,22 @@ const Section = styled.section`
     
     img {
       float: left;
+      width: 160px;
+      overflow: hidden;
+      margin: 2rem;
+
+      @media screen and (max-width: 500px) {
+        float: none;
+      }
     }
 
     .social-links {
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 500px) {
+        margin-left: 2rem;
+      }
       
       a {
         display: flex;
@@ -181,10 +195,27 @@ const Section = styled.section`
         font-weight: bold;
         text-decoration: none;
         color: black;
+
+        @media screen and (max-width: 500px) {
+          margin: 1rem 0;
+        }
       }
 
       a svg path {
         fill: black;
+      }
+
+      small {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0 2rem;
+        margin-top: -1rem; 
+
+        @media screen and (max-width: 500px) {
+          margin-top: 0;
+          margin: .6rem 0;
+          font-size: 1.6rem;
+        }
       }
     }
 
