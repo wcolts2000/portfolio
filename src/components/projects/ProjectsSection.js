@@ -94,7 +94,7 @@ const Section = styled.section`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
   }
 
   p.description {
