@@ -43,7 +43,7 @@ function ProjectsSection() {
           backTitle="Personal Notes and Reference Lists"
           backBody="Useful resources, notes, a blog, and project links made with GatsbyJS."
           projectCode="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
-          projectLive="https://pretty-good-gatsby-blog.netlify.com/"
+          projectLive="https://seanpheneger.com/"
         />
       </div>
       <p className="description">Here are a few projects you might like looking
