@@ -22,6 +22,14 @@ function ProjectsSection() {
                 Our Kids
               </div>
               <div className="card__subtitle">A react native app</div>
+              <div className="techstack">
+                <h3>Tech Used</h3>
+                <ul>
+                  <li>React Native</li>
+                  <li>EXPO</li>
+                  <li>Native Base</li>
+                </ul>
+              </div>
             </Front>
             <div className="card__back">
               <h3>Connect Our Kids: A People Search App</h3>
@@ -46,12 +54,6 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <h3>Tech Used</h3>
-          <ul>
-            <li>React Native</li>
-            <li>EXPO</li>
-            <li>Native Base</li>
-          </ul>
         </div>
         <div className="card">
           <div className="card__content">
@@ -64,6 +66,14 @@ function ProjectsSection() {
                 Up Print
               </div>
               <div className="card__subtitle">A printshop website</div>
+              <div className="techstack">
+                <h3>Tech Used</h3>
+                <ul>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>Materialize CSS</li>
+                </ul>
+              </div>
             </Front>
             <div className="card__back">
               <h3>Hurry Up Print e-commerce site</h3>
@@ -89,12 +99,6 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <h3>Tech Used</h3>
-          <ul>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Materialize CSS</li>
-          </ul>
         </div>
         <div className="card">
           <div className="card__content">
@@ -107,6 +111,15 @@ function ProjectsSection() {
                 Blog Site
               </div>
               <div className="card__subtitle">Notes/Resources</div>
+              <div className="techstack">
+                <h3>Tech Used</h3>
+                <ul>
+                  <li>GatsbyJS</li>
+                  <li>Contentful CMS</li>
+                  <li>Redux</li>
+                  <li>Styled-Components</li>
+                </ul>
+              </div>
             </Front>
             <div className="card__back">
               <h3>Personal Notes and Reference Lists</h3>
@@ -132,18 +145,11 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <h3>Tech Used</h3>
-          <ul>
-            <li>GatsbyJS</li>
-            <li>Contentful CMS</li>
-            <li>Redux</li>
-            <li>Styled-Components</li>
-          </ul>
         </div>
       </div>
       <p className="description">Here are a few projects you might like looking
       through. These have been built using React, React Native, and PHP. The
-      Blog Site is built with GatsbyJS to render the static pages while still using React. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags. The Hurry Up Print
+      Blog Site is built with GatsbyJS to render the static pages while still using React. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags have been used for the markup. The Hurry Up Print
       site is utilizing customized MaterializeCSS and the react native app is using react-native-elements, native base and custom styles.
       </p>
     </Section>
@@ -197,16 +203,6 @@ const Section = styled.section`
     perspective: 800px;
     height: 420px;
     margin: 7rem 0;
-
-    h3 {
-      font-size: 2rem;
-      padding: 0 2rem;
-    }
-
-    ul {
-      list-style: square;
-      font-size: 2rem;
-    }
   }
 
   .card__content {
@@ -223,6 +219,7 @@ const Section = styled.section`
     transform: rotateY(0.5turn);
   }
 
+  
   .card__front,
   .card__back {
     color: white;
@@ -236,6 +233,20 @@ const Section = styled.section`
     display: grid;
     align-content: center;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+  .card__front .techstack {
+    order: 3;
+    h3 {
+      font-size: 2.4rem;
+      padding: 0 2rem;
+    }
+
+    ul {
+      list-style-type: square;
+      font-size: 2rem;
+      list-style: inside;
+      text-align: left;
+    }
   }
 
   .card__front::before {
@@ -255,7 +266,7 @@ const Section = styled.section`
     transform: translateZ(9rem);
     order: 2;
     text-transform: uppercase;
-    margin: 1rem 0 5rem;
+    margin: 1rem 0 2rem;
   }
 
   .card__subtitle {
