@@ -46,6 +46,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <h3>Tech Used</h3>
           <ul>
             <li>React Native</li>
             <li>EXPO</li>
@@ -88,6 +89,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <h3>Tech Used</h3>
           <ul>
             <li>PHP</li>
             <li>MySQL</li>
@@ -130,6 +132,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
+          <h3>Tech Used</h3>
           <ul>
             <li>GatsbyJS</li>
             <li>Contentful CMS</li>
@@ -195,7 +198,13 @@ const Section = styled.section`
     height: 420px;
     margin: 7rem 0;
 
+    h3 {
+      font-size: 2rem;
+      padding: 0 2rem;
+    }
+
     ul {
+      list-style: square;
       font-size: 2rem;
     }
   }
