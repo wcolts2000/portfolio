@@ -84,7 +84,7 @@ const Section = styled.section`
     width: 70%;
     padding: 2.0rem;
   img {
-    width: 70%;
+    width: 90%;
     margin-bottom: 2rem;
   }
 @media (max-width: 800px) {

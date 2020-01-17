@@ -67,7 +67,7 @@ class ContactSection extends Component {
                   icon={['fab', 'github']}
                 />  Github Repos
               </a>
-              <small>Check out some projects on my github.</small>
+              <small>Check out my github.</small>
               <a
                 href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
                 target="_blank"
@@ -82,9 +82,7 @@ class ContactSection extends Component {
               <small>Find me on LinkedIn.</small>
             </div>
             <p>
-              I enjoy creating functional and aesthetically pleasing front ends and find
-              building apps that make a real difference, improving the clients productivity
-              and efficiency or offering a badly needed solution to some problem being faced.
+            I enjoy creating functional and aesthetically pleasing front ends and building apps that make a real difference in clients’ productivity, efficiency, and workflow. I am tenacious when it comes to finding solutions to pain points and will work closely with stakeholders to understand needs and vision for the product.
             </p>
             <p>
               Reach out on LinkedIn or submit a message or project inquiry in the form and I will get back to you as soon as I can. I look forward to talking with you.
@@ -137,7 +135,7 @@ const Section = styled.section`
   }
 
   .form-toggle {
-    background: #e4e1ff;
+    background: white;
     width: 100%;
     display: flex;
     padding: 0;
@@ -161,7 +159,7 @@ const Section = styled.section`
   .right {
     width: 50%;
     padding: 2rem;
-    background: linear-gradient(#e4e1ff 20%, rgba(0, 0, 255, 0)), url(${map});
+    background: white;
     background-size: cover;
 
     h3 {
@@ -206,7 +204,7 @@ const Section = styled.section`
       }
 
       small {
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: bold;
         padding: 0 2rem;
         margin-top: -1rem; 

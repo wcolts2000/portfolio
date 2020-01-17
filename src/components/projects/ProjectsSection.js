@@ -21,7 +21,7 @@ function ProjectsSection() {
           backTitle="Connect Our Kids: A People Search App"
           backBody="Helping Social Workers find extended family members for children entering the foster care system."
           projectCode="https://github.com/labs13-connect-kids/mobile"
-          projectLive="https://expo.io/@connectourkids/connectOurKids?release-channel=staging"
+          projectLive="https://www.connectourkids.org/team"
         />
         <Card 
           url="connectourkids.jpg"
@@ -103,12 +103,12 @@ const Section = styled.section`
     width: 60%;
     z-index: 100;
     line-height: 1.5;
-    background-color: #5F9EA0;
-    outline: 10px solid #5F9EA0;
+    background-color: #6C63FF;
+    outline: 10px solid #6C63FF;
     outline-offset: 8px;
     padding: 2rem;
     color: white;
-    text-shadow: 1px 1px 2px black;
+    /* text-shadow: 1px 1px 2px black; */
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     bottom: -10%;
     

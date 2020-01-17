@@ -117,12 +117,12 @@ const Form = styled.form`
     border: none;
     border-bottom: 1px dotted #0f0f0f;
     margin-bottom: 1rem;
-    background: #E4E1FF;
+    background: white;
     border-radius: 3px;
 
     &[type='submit'] {
       background:  #6C63FF;
-      color: #0f0f0f;
+      color: white;
       cursor: pointer;
       text-transform: uppercase;
       position: relative;

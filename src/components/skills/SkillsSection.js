@@ -48,14 +48,14 @@ export default SkillsSection;
 // ==============================
 
 const Section = styled.section`
-  background: linear-gradient(rgba(108, 99, 255, 0.8), rgba(108, 99, 255, 0.8)),  url(${bg});
+  background: linear-gradient(rgba(108, 99, 255, 0.4), rgba(108, 99, 255, 0.4)),  url(${bg});
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 14rem 4.5rem 16rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     padding-bottom: 5rem;
   }
   
@@ -92,7 +92,7 @@ const Section = styled.section`
   
   .skills-container {
     background: white;
-    padding: 2rem;
+    padding: 2rem ;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -107,28 +107,6 @@ const Section = styled.section`
       flex-direction: column;
     }
 
-    ::before, ::after {
-      content: "";
-      position: absolute;
-    }
-    ::before {
-      background:  #B8F9E6DD;
-      top: 0;
-      left:0;
-      right: 50%;
-      z-index:1;
-      bottom: 0;
-      clip-path: polygon(0% 0%, 100% 0%, 20% 100%, 0% 100% );
-    }
-    ::after {
-      background:  #6C64FFAA;
-      top: 0;
-      left:0;
-      right: 50%;
-      z-index: 2;
-      bottom: 0;
-      clip-path: polygon(0% 0%, 20% 0%, 100% 100%, 0% 100% );
-    }
   }
 
   ul {
@@ -178,20 +156,15 @@ const Section = styled.section`
     width: 60%;
     z-index: 100;
     line-height: 1.5;
-    background-color: #5F9EA0;
-    outline: 10px solid #5F9EA0;
+    background-color: #6C63FF;
+    outline: 10px solid #6C63FF;
     outline-offset: 8px;
     padding: 2rem;
     color: white;
-    text-shadow: 1px 1px 2px black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     bottom: -10%;
     
-    @media (max-width: 950px) {
-      width: 50%;
-    }
-    
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       bottom: unset;
       position: relative;
       width: auto;
