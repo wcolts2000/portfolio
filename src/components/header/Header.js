@@ -74,7 +74,7 @@ const Nav = styled.nav`
   width: 100%;
 
   .logo {
-    width: 90px;
+    width: 140px;
     margin: 0;
     padding: 0;
   }
