@@ -34,7 +34,7 @@ function SkillsSection() {
         </ul>
         <img data-aos="fade-up" src={skills} alt="library and language logos" />
       </div>
-      <p className="skills-caption" data-aos="fade-left">
+      <p className="skills-caption" data-aos="flip-down">
         With most of my experience being in JavaScript, I have found building
         applications in ReactJS to be very productive and enjoyable. I also love
         Redux for complex state management and enjoy PreProcessors and using

@@ -54,7 +54,7 @@ function ProjectsSection() {
           aos="fade-left"
         />
       </div>
-      <p className="description" data-aos="fade-right">
+      <p className="description" data-aos="flip-down">
         Here are a few projects you might like looking through. These have been
         built using React, React Native, and PHP. The Blog Site is built with
         GatsbyJS to render the static pages while still using React. Styling for
