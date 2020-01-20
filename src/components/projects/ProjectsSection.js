@@ -21,7 +21,6 @@ function ProjectsSection() {
           backBody="Helping Social Workers find extended family members for children entering the foster care system."
           projectCode="https://github.com/labs13-connect-kids/mobile"
           projectLive="https://www.connectourkids.org/team"
-          aos="fade-right"
         />
         <Card
           url="connectourkids.jpg"
@@ -33,8 +32,6 @@ function ProjectsSection() {
           backBody="An e-commerce print shop site with user login and admin dashboard features and pricing calculators."
           projectCode="https://github.com/wcolts2000/hup-client/"
           projectLive="https://hurryupprint.com"
-          aos="fade-up"
-          delay="500"
         />
         <Card
           url="blog.jpg"
@@ -51,7 +48,6 @@ function ProjectsSection() {
           backBody="Useful resources, notes, a blog, and project links made with GatsbyJS."
           projectCode="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
           projectLive="https://seanpheneger.com/"
-          aos="fade-left"
         />
       </div>
       <p className="description" data-aos="flip-down">

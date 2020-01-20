@@ -15,12 +15,10 @@ function ProjectCard({
   backTitle,
   backBody,
   projectCode,
-  projectLive,
-  aos,
-  delay
+  projectLive
 }) {
   return (
-    <Card className="card" data-aos={aos} data-aos-delay={delay}>
+    <Card className="card">
       <div className="card__content">
         <Front url={require('../../assets/' + url)} className="card__front">
           <div className="card__title">
