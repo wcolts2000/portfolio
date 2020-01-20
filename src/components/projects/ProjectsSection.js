@@ -38,12 +38,7 @@ function ProjectsSection() {
           titleTop="GatsbyJS"
           titleBottom="Blog Site"
           subtitle="Notes/Resources"
-          techUsed={[
-            'GatsbyJS',
-            'Contentful CMS',
-            'Redux',
-            'Styled-Components'
-          ]}
+          techUsed={['GatsbyJS', 'Contentful CMS', 'Styled-Components']}
           backTitle="Personal Notes and Reference Lists"
           backBody="Useful resources, notes, a blog, and project links made with GatsbyJS."
           projectCode="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
