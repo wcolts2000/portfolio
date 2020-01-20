@@ -6,19 +6,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // ========= COMPONENT ==========
 // ==============================
 
-function ProjectCard({url, titleTop, titleBottom, subtitle, techUsed, backTitle, backBody, projectCode, projectLive}) {
+function ProjectCard({
+  url,
+  titleTop,
+  titleBottom,
+  subtitle,
+  techUsed,
+  backTitle,
+  backBody,
+  projectCode,
+  projectLive,
+  aos,
+  delay
+}) {
   return (
-    <Card className="card">
+    <Card className="card" data-aos={aos} data-aos-delay={delay}>
       <div className="card__content">
-        <Front
-          url={require('../../assets/' + url)}
-          className="card__front"
-        >
+        <Front url={require('../../assets/' + url)} className="card__front">
           <div className="card__title">
             {titleTop} <br />
             {titleBottom}
           </div>
-  <div className="card__subtitle">{subtitle}</div>
+          <div className="card__subtitle">{subtitle}</div>
           <div className="techstack">
             <h3>Tech Used</h3>
             <ul>
@@ -29,43 +38,34 @@ function ProjectCard({url, titleTop, titleBottom, subtitle, techUsed, backTitle,
           </div>
         </Front>
         <div className="card__back">
-              <h3>{backTitle}</h3>
-          <p className="card__body">
-          {backBody}
-          </p>
+          <h3>{backTitle}</h3>
+          <p className="card__body">{backBody}</p>
           <div className="icon-container">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={projectCode}
-            >
+            <a target="_blank" rel="noopener noreferrer" href={projectCode}>
               <FontAwesomeIcon className="icon" icon={['fab', 'github']} /> Code
             </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={projectLive}
-            >
-              <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} /> Live
+            <a target="_blank" rel="noopener noreferrer" href={projectLive}>
+              <FontAwesomeIcon className="icon" icon={['fas', 'desktop']} />{' '}
+              Live
             </a>
           </div>
         </div>
       </div>
     </Card>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
 
 // ==============================
 // ===========  STYLES  =========
 // ==============================
 
 const Card = styled.div`
-    width: 270.5px;
-    perspective: 800px;
-    height: 420px;
-    margin: 7rem 0;
+  width: 270.5px;
+  perspective: 800px;
+  height: 420px;
+  margin: 7rem 0;
 
   .card__content {
     height: 420px;
@@ -81,7 +81,6 @@ const Card = styled.div`
     transform: rotateY(0.5turn);
   }
 
-  
   .card__front,
   .card__back {
     color: white;
@@ -176,7 +175,7 @@ const Card = styled.div`
         padding: 1rem 2rem;
         border-radius: 50px;
         border: 2px solid white;
-        
+
         :hover {
           border: 2px solid white;
           background: white;
@@ -188,7 +187,6 @@ const Card = styled.div`
         transform: translateZ(4rem);
         font-size: 2rem;
         margin: 0 1.6rem;
-
       }
     }
   }
@@ -200,5 +198,6 @@ const Front = styled.div`
   background-position: top;
   background-blend-mode: multiply;
   color: #333;
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${props => props.url});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(${props => props.url});
 `;

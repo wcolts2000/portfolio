@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Card from "./ProjectCard"
+import Card from './ProjectCard';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -10,9 +9,9 @@ import Card from "./ProjectCard"
 function ProjectsSection() {
   return (
     <Section id="projects">
-      <h2>Projects</h2>
+      <h2 data-aos="flip-up">Projects</h2>
       <div className="container">
-        <Card 
+        <Card
           url="hurryupprint.jpg"
           titleTop="Connect"
           titleBottom="Our Kids"
@@ -22,8 +21,9 @@ function ProjectsSection() {
           backBody="Helping Social Workers find extended family members for children entering the foster care system."
           projectCode="https://github.com/labs13-connect-kids/mobile"
           projectLive="https://www.connectourkids.org/team"
+          aos="fade-right"
         />
-        <Card 
+        <Card
           url="connectourkids.jpg"
           titleTop="Hurry"
           titleBottom="Up Print"
@@ -33,23 +33,35 @@ function ProjectsSection() {
           backBody="An e-commerce print shop site with user login and admin dashboard features and pricing calculators."
           projectCode="https://github.com/wcolts2000/hup-client/"
           projectLive="https://hurryupprint.com"
+          aos="fade-up"
+          delay="500"
         />
-        <Card 
+        <Card
           url="blog.jpg"
           titleTop="GatsbyJS"
           titleBottom="Blog Site"
           subtitle="Notes/Resources"
-          techUsed={['GatsbyJS', 'Contentful CMS', 'Redux', 'Styled-Components']}
+          techUsed={[
+            'GatsbyJS',
+            'Contentful CMS',
+            'Redux',
+            'Styled-Components'
+          ]}
           backTitle="Personal Notes and Reference Lists"
           backBody="Useful resources, notes, a blog, and project links made with GatsbyJS."
           projectCode="https://github.com/wcolts2000/the_pretty_good_gatsy_blog"
           projectLive="https://seanpheneger.com/"
+          aos="fade-left"
         />
       </div>
-      <p className="description">Here are a few projects you might like looking
-      through. These have been built using React, React Native, and PHP. The
-      Blog Site is built with GatsbyJS to render the static pages while still using React. Styling for the sites has been done with styled-components and native CSS3 and HTML5 semantic tags have been used for the markup. The Hurry Up Print
-      site is utilizing customized MaterializeCSS and the react native app is using react-native-elements, native base and custom styles.
+      <p className="description" data-aos="fade-right">
+        Here are a few projects you might like looking through. These have been
+        built using React, React Native, and PHP. The Blog Site is built with
+        GatsbyJS to render the static pages while still using React. Styling for
+        the sites has been done with styled-components and native CSS3 and HTML5
+        semantic tags have been used for the markup. The Hurry Up Print site is
+        utilizing customized MaterializeCSS and the react native app is using
+        react-native-elements, native base and custom styles.
       </p>
     </Section>
   );
@@ -103,20 +115,20 @@ const Section = styled.section`
     width: 60%;
     z-index: 100;
     line-height: 1.5;
-    background-color: #6C63FF;
-    outline: 10px solid #6C63FF;
+    background-color: #6c63ff;
+    outline: 10px solid #6c63ff;
     outline-offset: 8px;
     padding: 2rem;
     color: white;
     /* text-shadow: 1px 1px 2px black; */
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     bottom: -10%;
-    
+
     a {
       text-shadow: 1px 1px 2px white;
       text-transform: uppercase;
       text-decoration: none;
-      color: #6C64FF;
+      color: #6c64ff;
       font-weight: bold;
     }
 
@@ -127,5 +139,3 @@ const Section = styled.section`
     }
   }
 `;
-
-

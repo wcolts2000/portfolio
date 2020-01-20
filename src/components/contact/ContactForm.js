@@ -29,21 +29,29 @@ class ContactForm extends Component {
         message: this.state.message
       })
     })
-      .then(() =>{
-        this.props.toggleModal("Success", "Thank you for your interest. I will get back to you as soon as possible")
-      })       
-      .catch(error => this.props.toggleModal("Error", error));
+      .then(() => {
+        this.props.toggleModal(
+          'Success',
+          'Thank you for your interest. I will get back to you as soon as possible'
+        );
+      })
+      .catch(error => this.props.toggleModal('Error', error));
     e.preventDefault();
     this.setState({
       name: '',
       email: '',
       message: ''
-    })
+    });
   };
   render() {
     const { name, email, message } = this.state;
     return (
-      <Form onSubmit={this.submitHandler} name="contact" method="post">
+      <Form
+        onSubmit={this.submitHandler}
+        name="contact"
+        method="post"
+        data-aos="fade-right"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>
         <input
@@ -104,7 +112,7 @@ const Form = styled.form`
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid  #6C63FF;
+    border: 1px solid #6c63ff;
     -webkit-text-fill-color: #0f0f0f;
     -webkit-box-shadow: 0 0 0px 1000px lightgreen inset;
     transition: background-color 5000s ease-in-out 0s;
@@ -121,7 +129,7 @@ const Form = styled.form`
     border-radius: 3px;
 
     &[type='submit'] {
-      background:  #6C63FF;
+      background: #6c63ff;
       color: white;
       cursor: pointer;
       text-transform: uppercase;

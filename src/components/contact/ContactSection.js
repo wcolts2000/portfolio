@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import ProjectForm from './ProjectForm';
-import map from '../../assets/map.png';
 import profilePic from '../../assets/profileImgSm.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -22,7 +21,7 @@ class ContactSection extends Component {
     const { toggleModal } = this.props;
     return (
       <Section id="contact">
-        <h2>CONTACT</h2>
+        <h2 data-aos="flip-up">CONTACT</h2>
         <Wrapper active={this.state.simple}>
           <div className="left">
             <p className="form-toggle">
@@ -48,15 +47,22 @@ class ContactSection extends Component {
             )}
           </div>
           <div className="right">
-            <h3>Get In Touch</h3>
-            <h3>Sean Pheneger | Full Stack Web Developer</h3>
+            <h3 data-aos="fade-left">Get In Touch</h3>
+            <h3 data-aos="fade-left">
+              Sean Pheneger | Full Stack Web Developer
+            </h3>
             <img
               id="profilePic"
               src={profilePic}
               alt="Sean Pheneger, full stack developer"
+              data-aos="fade-left"
             />
 
-            <div className="social-links">
+            <div
+              className="social-links"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <a
                 href="https://github.com/wcolts2000?tab=repositories"
                 target="_blank"
@@ -65,7 +71,8 @@ class ContactSection extends Component {
                 <FontAwesomeIcon
                   className="footer-icon"
                   icon={['fab', 'github']}
-                />  Github Repos
+                />{' '}
+                Github Repos
               </a>
               <small>Check out my github.</small>
               <a
@@ -81,11 +88,17 @@ class ContactSection extends Component {
               </a>
               <small>Find me on LinkedIn.</small>
             </div>
-            <p>
-            I enjoy creating functional and aesthetically pleasing front ends and building apps that make a real difference in clients’ productivity, efficiency, and workflow. I am tenacious when it comes to finding solutions to pain points and will work closely with stakeholders to understand needs and vision for the product.
+            <p data-aos="fade-left" data-aos-delay="200">
+              I enjoy creating functional and aesthetically pleasing front ends
+              and building apps that make a real difference in clients’
+              productivity, efficiency, and workflow. I am tenacious when it
+              comes to finding solutions to pain points and will work closely
+              with stakeholders to understand needs and vision for the product.
             </p>
-            <p>
-              Reach out on LinkedIn or submit a message or project inquiry in the form and I will get back to you as soon as I can. I look forward to talking with you.
+            <p data-aos="fade-left" data-aos-delay="200">
+              Reach out on LinkedIn or submit a message or project inquiry in
+              the form and I will get back to you as soon as I can. I look
+              forward to talking with you.
             </p>
           </div>
         </Wrapper>
@@ -146,7 +159,7 @@ const Section = styled.section`
   form {
     width: 100%;
   }
-  
+
   .left {
     background-color: cadetblue;
     width: 50%;
@@ -166,7 +179,7 @@ const Section = styled.section`
       font-size: 2rem;
       padding: 0 2rem;
     }
-    
+
     img {
       float: left;
       width: 160px;
@@ -185,7 +198,7 @@ const Section = styled.section`
       @media screen and (max-width: 500px) {
         margin-left: 2rem;
       }
-      
+
       a {
         display: flex;
         align-items: center;
@@ -207,18 +220,15 @@ const Section = styled.section`
         font-size: 2rem;
         font-weight: bold;
         padding: 0 2rem;
-        margin-top: -1rem; 
+        margin-top: -1rem;
 
         @media screen and (max-width: 500px) {
           margin-top: 0;
-          margin: .6rem 0;
+          margin: 0.6rem 0;
           font-size: 1.6rem;
         }
       }
     }
-
-
-
 
     p {
       color: #0f0f0f;

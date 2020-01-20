@@ -25,25 +25,33 @@ class ContactForm extends Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'project', ...this.state })
     })
-    .then(() =>{
-      this.props.toggleModal("Success", "Thank you for your interest. I will get back to you as soon as possible")
-    })       
-    .catch(error => this.props.toggleModal("Error", error));
-  e.preventDefault();
-  this.setState({
-    name: '',
-    email: '',
-    message: '',
-    duration: '',
-    company: '',
-    budget: ''
-  })
-}
+      .then(() => {
+        this.props.toggleModal(
+          'Success',
+          'Thank you for your interest. I will get back to you as soon as possible'
+        );
+      })
+      .catch(error => this.props.toggleModal('Error', error));
+    e.preventDefault();
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      duration: '',
+      company: '',
+      budget: ''
+    });
+  };
 
   render() {
     const { name, email, message, company, budget } = this.state;
     return (
-      <Form onSubmit={this.submitHandler} name="project" method="post">
+      <Form
+        onSubmit={this.submitHandler}
+        name="project"
+        method="post"
+        data-aos="fade-right"
+      >
         <input type="hidden" name="form-name" value="project" />
         <label htmlFor="name">Name</label>
         <input
@@ -123,7 +131,7 @@ const Form = styled.form`
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid  #6C63FF;
+    border: 1px solid #6c63ff;
     -webkit-text-fill-color: #0f0f0f;
     -webkit-box-shadow: 0 0 0px 1000px lightgreen inset;
     transition: background-color 5000s ease-in-out 0s;
@@ -141,7 +149,7 @@ const Form = styled.form`
     width: 100%;
 
     &[type='submit'] {
-      background:  #6C63FF;
+      background: #6c63ff;
       color: white;
       cursor: pointer;
       border-radius: 5rem;
