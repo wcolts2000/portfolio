@@ -16,7 +16,7 @@ function ProjectsSection() {
           titleTop="Connect"
           titleBottom="Our Kids"
           subtitle="A react native app"
-          techUsed={['React Native', 'EXPO', 'Native Base']}
+          techUsed={['React Native', 'EXPO', 'Redux']}
           backTitle="Connect Our Kids: A People Search App"
           backBody="Helping Social Workers find extended family members for children entering the foster care system."
           projectCode="https://github.com/labs13-connect-kids/mobile"

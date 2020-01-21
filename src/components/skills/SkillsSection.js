@@ -38,8 +38,10 @@ function SkillsSection() {
         With most of my experience being in JavaScript, I have found building
         applications in ReactJS to be very productive and enjoyable. I also love
         Redux for complex state management and enjoy PreProcessors and using
-        Styled-Components when I am styling my sites. If you need a backend, I
-        am familiar with NodeJS, Express and Django as well.
+        Styled-Components when I am styling my sites. Need a dynamic app or site
+        with data being managed? No problem, I'm familiar with Node, Express,
+        and Django, to name a few, and can build out your backend and database
+        as well.
       </p>
     </Section>
   );
