@@ -76,7 +76,7 @@ class ContactSection extends Component {
               </a>
               <small>Check out my github.</small>
               <a
-                href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
+                href="https://www.linkedin.com/in/sean-pheneger/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
