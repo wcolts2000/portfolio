@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterComponent className="footer-container">
       <div className="footer-right">
         <a
-          href="https://github.com/wcolts2000?tab=repositories"
+          href="https://github.com/wcolts2000"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -64,7 +64,7 @@ class ContactSection extends Component {
               data-aos-delay="300"
             >
               <a
-                href="https://github.com/wcolts2000?tab=repositories"
+                href="https://github.com/wcolts2000"
                 target="_blank"
                 rel="noopener noreferrer"
               >
