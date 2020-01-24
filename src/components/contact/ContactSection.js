@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import ProjectForm from './ProjectForm';
 import profilePic from '../../assets/profileImgSm.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -48,57 +47,21 @@ class ContactSection extends Component {
           </div>
           <div className="right">
             <h3 data-aos="fade-left">Get In Touch</h3>
-            <h3 data-aos="fade-left">
+            <h4 data-aos="fade-left">
               Sean Pheneger | Full Stack Web Developer
-            </h3>
+            </h4>
             <img
               id="profilePic"
               src={profilePic}
               alt="Sean Pheneger, full stack developer"
               data-aos="fade-left"
             />
-
-            <div
-              className="social-links"
-              data-aos="fade-left"
-              data-aos-delay="300"
-            >
-              <a
-                href="https://github.com/wcolts2000"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  className="footer-icon"
-                  icon={['fab', 'github']}
-                />{' '}
-                Github Repos
-              </a>
-              <small>Check out my github.</small>
-              <a
-                href="https://www.linkedin.com/in/sean-pheneger/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  className="footer-icon"
-                  icon={['fab', 'linkedin']}
-                />
-                Linked In Profile
-              </a>
-              <small>Find me on LinkedIn.</small>
-            </div>
             <p data-aos="fade-left" data-aos-delay="200">
               I enjoy creating functional and aesthetically pleasing front ends
               and building apps that make a real difference in clients’
               productivity, efficiency, and workflow. I am tenacious when it
               comes to finding solutions to pain points and will work closely
               with stakeholders to understand needs and vision for the product.
-            </p>
-            <p data-aos="fade-left" data-aos-delay="200">
-              Reach out on LinkedIn or submit a message or project inquiry in
-              the form and I will get back to you as soon as I can. I look
-              forward to talking with you.
             </p>
           </div>
         </Wrapper>
@@ -152,6 +115,7 @@ const Section = styled.section`
     width: 100%;
     display: flex;
     padding: 0;
+    font-weight: bold;
     white-space: nowrap;
     margin: 0;
   }
@@ -178,10 +142,18 @@ const Section = styled.section`
     h3 {
       font-size: 2rem;
       padding: 0 2rem;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    h4 {
+      font-size: 2rem;
+      padding: 0 2rem;
+      font-weight: normal;
+      margin-bottom: 0;
     }
 
     img {
-      float: left;
       width: 160px;
       overflow: hidden;
       margin: 2rem;
@@ -203,7 +175,6 @@ const Section = styled.section`
         display: flex;
         align-items: center;
         font-size: 2rem;
-        font-weight: bold;
         text-decoration: none;
         color: black;
 
@@ -218,7 +189,6 @@ const Section = styled.section`
 
       small {
         font-size: 2rem;
-        font-weight: bold;
         padding: 0 2rem;
         margin-top: -1rem;
 
@@ -233,7 +203,6 @@ const Section = styled.section`
     p {
       color: #0f0f0f;
       width: 100%;
-      font-weight: bold;
     }
 
     @media (max-width: 750px) {

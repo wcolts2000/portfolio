@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import heroImg from '../../assets/hero-logos.svg';
 import logo from '../../assets/PhenegerDevelopmentLogo174x60White.svg';
 import AOS from 'aos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -38,6 +39,24 @@ function LeftSection() {
       >
         Get In Touch
       </Link>
+      <div className="social-links" data-aos="fade-right" data-aos-delay="1000">
+        <a
+          className="socialLink"
+          href="https://github.com/wcolts2000"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />{' '}
+        </a>
+        <a
+          className="socialLink"
+          href="https://www.linkedin.com/in/sean-pheneger/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin']} />
+        </a>
+      </div>
     </div>
   );
 }
@@ -162,5 +181,20 @@ const Section = styled.section`
       color: #6c63ff;
       background: #fff;
     }
+  }
+  a.socialLink {
+    border: none;
+    padding: 2.2rem 4.4rem 0px 6px;
+
+    &:hover {
+      background: transparent;
+      color: black;
+      opacity: 0.7;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
   }
 `;

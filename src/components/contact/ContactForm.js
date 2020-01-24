@@ -57,7 +57,7 @@ class ContactForm extends Component {
         <input
           onChange={this.inputChangeHandler}
           type="text"
-          placeholder="John Doe"
+          placeholder="Joseph Donaldson"
           value={name}
           required
           name="name"
@@ -66,7 +66,7 @@ class ContactForm extends Component {
         <input
           onChange={this.inputChangeHandler}
           type="email"
-          placeholder="jonnydoe@email.com"
+          placeholder="jonnyd@email.com"
           value={email}
           required
           name="email"
@@ -74,7 +74,8 @@ class ContactForm extends Component {
         <label htmlFor="message">Message</label>
         <textarea
           onChange={this.inputChangeHandler}
-          placeholder="Message here..."
+          placeholder="Sean, I really enjoyed checking out your portfolio and would love
+            to get in contact regarding some projects I have going on"
           value={message}
           rows="8"
           required
