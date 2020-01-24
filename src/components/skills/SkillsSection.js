@@ -60,7 +60,7 @@ const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 14rem 4.5rem 16rem;
+  padding: 14rem 4.5rem 20rem;
 
   @media (max-width: 1000px) {
     padding-bottom: 5rem;
