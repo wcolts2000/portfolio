@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import smallLogo from '../../assets/PhenegerDevelopmentLogo174x60.svg'
+import smallLogo from '../../assets/PhenegerDevelopmentLogo174x60.svg';
 
 // =================================
 // ===========  COMPONENT  =========
@@ -10,15 +10,10 @@ import smallLogo from '../../assets/PhenegerDevelopmentLogo174x60.svg'
 function Header() {
   return (
     <Nav>
-      <Link
-      className="left"
-      smooth
-      offset={0}
-      duration={500}
-      to="hero"
-      ><img className="logo" src={smallLogo} alt="pheneger development"/></Link>
+      <Link className="left" smooth offset={0} duration={500} to="hero">
+        <img className="logo" src={smallLogo} alt="pheneger development" />
+      </Link>
       <div className="right">
-
         <Link
           activeClass="active"
           spy={true}
@@ -65,7 +60,7 @@ const Nav = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  background: #E4E1FF;
+  background: #e4e1ff;
   padding: 15px;
   z-index: 2000;
   display: flex;
@@ -73,10 +68,20 @@ const Nav = styled.nav`
   flex: 1 0 auto;
   width: 100%;
 
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo {
     width: 140px;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 480px) {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
   }
 
   .left {
@@ -90,9 +95,14 @@ const Nav = styled.nav`
     width: 80%;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 480px) {
+      justify-content: space-around;
+      width: 98%;
+    }
   }
   a {
-    color:  #000;
+    color: #000;
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -106,6 +116,6 @@ const Nav = styled.nav`
     }
   }
   .active {
-    color: #6C64FF;
+    color: #6c64ff;
   }
 `;
