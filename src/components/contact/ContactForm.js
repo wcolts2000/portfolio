@@ -50,7 +50,7 @@ class ContactForm extends Component {
         onSubmit={this.submitHandler}
         name="contact"
         method="post"
-        data-aos="fade-right"
+        data-aos="fade-up"
       >
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>

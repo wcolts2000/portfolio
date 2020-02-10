@@ -46,17 +46,15 @@ class ContactSection extends Component {
             )}
           </div>
           <div className="right">
-            <h3 data-aos="fade-left">Get In Touch</h3>
-            <h4 data-aos="fade-left">
-              Sean Pheneger | Full Stack Web Developer
-            </h4>
+            <h3 data-aos="fade-up">Get In Touch</h3>
+            <h4 data-aos="fade-up">Sean Pheneger | Full Stack Web Developer</h4>
             <img
               id="profilePic"
               src={profilePic}
               alt="Sean Pheneger, full stack developer"
-              data-aos="fade-left"
+              data-aos="fade-up"
             />
-            <p data-aos="fade-left" data-aos-delay="200">
+            <p data-aos="fade-up" data-aos-delay="200">
               I enjoy creating functional and aesthetically pleasing front ends
               and building apps that make a real difference in clients’
               productivity, efficiency, and workflow. I am tenacious when it
