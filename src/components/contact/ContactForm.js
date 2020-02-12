@@ -74,8 +74,8 @@ class ContactForm extends Component {
         <label htmlFor="message">Message</label>
         <textarea
           onChange={this.inputChangeHandler}
-          placeholder="Sean, I really enjoyed checking out your portfolio and would love
-            to get in contact regarding some projects I have going on"
+          placeholder="Sean, I would love
+            to get in contact regarding some projects I have going on."
           value={message}
           rows="8"
           required
